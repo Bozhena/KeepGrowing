@@ -1,0 +1,10 @@
+body {font-family: "Lato", sans-serif;
+width: 100%; height: auto;
+background-color: #cce7e2;}
+
+#nav_bar.ul.li {
+  list-style-type: none;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+
+}
