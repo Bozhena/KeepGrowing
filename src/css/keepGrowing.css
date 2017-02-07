@@ -2,3 +2,77 @@
 body {font-family: "Lato", sans-serif;
 width: 100%; height: auto;
 background-color: #cce7e2;}
+
+.navigation_menu {
+  width:100%;
+  float:left
+}
+
+#logo {
+  float:left;
+  margin-left:25px;
+  margin-top:20px;
+}
+
+#logo img {
+  width:200px;
+  height:auto;
+}
+
+#nav_bar {
+  float:right;
+  list-style-type: none;
+  margin-right:50px;
+}
+
+.nav_bar {
+  float:left;
+}
+
+#inspiration_phrase {
+  font-family:Lato;
+  text-align:center;
+  font-size:20px
+}
+
+.cards_view {
+  margin-top:25px;
+}
+
+.cards_view ul {
+  list-style-type: none;
+}
+
+.cards_view ul li p {
+  margin-top:55px;
+}
+
+.cards_view ul li {
+  float:left;
+  border:1px;
+  color:white;
+  font-family:Lato;
+  text-align:center;
+  height:150px;
+  width:23%;
+  margin-left:15px;
+  border-radius:10px
+}
+
+#signIn {
+  color:black;
+  font-family:"Lato";
+  border-radius:25px;
+}
+
+#search {
+   border:0px;
+   color:black;
+   font-family:"Lato";
+ }
+
+#about {
+   border:0px;
+   color:black;
+   font-family:"Lato";
+}

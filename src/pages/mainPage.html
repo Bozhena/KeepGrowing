@@ -5,33 +5,51 @@
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 </head>
 <body>
-  <div class="navigation_menu" style="width:100%; float:left">
-    <div id="logo" style="float:left; margin-left:25px; margin-top:20px;">
-      <img src="..//images/logo.jpg" style="width:200px; height:auto;">
+  <div class="navigation_menu">
+    <div id="logo">
+      <img src="..//images/logo.jpg">
     </div>
-    <div id="nav_bar" style="float:right; list-style-type: none; margin-right:50px;">
+    <div id="nav_bar">
       <ul>
-        <li style="float:left"><a href="#" class="ui-btn ui-icon-search ui-btn-icon-left" style="border:0px; color:black; font-family:Lato">...</a></li>
-        <li style="float:left"><a href="#" class="ui-btn" style="border:0px; color:black; font-family:Lato">About</a></li>
-        <li style="float:left"><a href="#" class="ui-btn" style="color:black; font-family:Lato; border-radius:25px;">Sign In</a></li>
+        <li class="nav_bar"><a href="#" class="ui-btn ui-icon-search ui-btn-icon-left" id="search">...</a></li>
+        <li class="nav_bar"><a href="#" class="ui-btn" id="about">About</a></li>
+        <li class="nav_bar"><a href="#" class="ui-btn" id="signIn">Sign In</a></li>
       </ul>
     </div>
   </div>
-  <div id="inspiration_phrase" style="font-family:Lato; text-align:center; font-size:20px"><b>New day is a new chalange</b> </br> Today you can make...
+  <div id="inspiration_phrase">
+    <b>New day is a new chalange</b> </br> Today you can make...
   </div>
-  <div class="cards_view" style="margin-top:25px;">
-      <ul style="list-style-type: none;">
-        <li style="float:left; background-color:#919845; border:1px; color:white; font-family:Lato; text-align:center; height:150px; width:23%; border-radius:10px">Tree of Wishes</li>
-        <li style="float:left; background-color:#4f506e; border:1px; color:white; font-family:Lato; text-align:center; height:150px; width:23%; margin-left:15px; border-radius:10px">Smile and Count</li>
-        <li style="float:left; background-color:#cf915a; border:1px; color:white; font-family:Lato; text-align:center; height:150px;  width:23%; margin-left:15px; border-radius:10px">Paper Bowl</li>
-        <li style="float:left; background-color:#3e5e30; border:1px; color:white; font-family:Lato; text-align:center; height:150px;  width:23%; margin-left:15px; border-radius:10px">Funny Seasons</li>
+  <div class="cards_view">
+      <ul>
+        <li style="background-color:#919845;">
+          <p>Tree of Wishes</p>
+        </li>
+        <li style="background-color:#4f506e;">
+          <p>Smile and Count</p>
+        </li>
+        <li style="background-color:#cf915a;">
+          <p>Paper Bowl</p>
+        </li>
+        <li style="background-color:#3e5e30;">
+          <p>Funny Seasons
+          </p>
+        </li>
       </ul>
 
-      <ul style="list-style-type: none;">
-        <li style="float:left; margin-top:15px; background-color:#475c5d; border:1px; color:white; font-family:Lato; text-align:center; height:150px; width:23%; border-radius:10px">Christmas Baal with</li>
-        <li style="float:left; margin-top:15px; background-color:#57b5b4; border:1px; color:white; font-family:Lato; text-align:center; height:150px; width:23%; margin-left:15px; border-radius:10px">Thank you Card</li>
-        <li style="float:left; margin-top:15px; background-color:#58b05d; border:1px; color:white; font-family:Lato; text-align:center; height:150px;  width:23%; margin-left:15px; border-radius:10px">Happy Mpther's Day</li>
-        <li style="float:left; margin-top:15px; background-color:#d15475; border:1px; color:white; font-family:Lato; text-align:center; height:150px;  width:23%; margin-left:15px; border-radius:10px">1st April. Day of Fun!</li>
+      <ul>
+        <li style="margin-top:15px; background-color:#475c5d;">
+          <p>Christmas Baal with</p>
+        </li>
+        <li style="margin-top:15px; background-color:#57b5b4;">
+          <p>Thank you Card</p>
+        </li>
+        <li style="margin-top:15px; background-color:#58b05d;">
+          <p>Happy Mother's Day</p>
+        </li>
+        <li style="margin-top:15px; background-color:#d15475;">
+          <p>1st April. Day of Fun!</p>
+        </li>
       </ul>
   </div>
   <div class='footer'></div>
