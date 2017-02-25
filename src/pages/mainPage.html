@@ -3,6 +3,7 @@
   <title>KeepGrowing</title>
   <link rel="stylesheet" type="text/css" href="../css/keepGrowing.css">
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="../js/navigation.js"></script>
 </head>
 <body>
   <div class="navigation_menu">
@@ -22,11 +23,12 @@
       <b>New day is a new chalange</b> </br> Today you can make...
     </div>
     <div class="cards_view">
-      <!--  <ul>-->
-        <div style="background-color:#919845;">
-          <p>Tree of Wishes</p>
-        </div>
-        <div style="background-color:#4f506e;">
+        <a href="../pages/card.html" >
+          <div  style="background-color:#919845;" >
+            <p>Tree of Wishes</p>
+          </div>
+        </a>
+        <div id="card_1" style="background-color:#4f506e;" onclick="openCard()">
           <p>Smile and Count</p>
         </div>
         <div style="background-color:#cf915a;">
@@ -48,7 +50,6 @@
         <div style="background-color:#d15475;">
           <p>1st April. Day of Fun!</p>
         </div>
-      <!--  </ul>-->
     </div>
 </div>
   <div id='footer'>

@@ -85,6 +85,10 @@ body {
   width: 23%;
 }
 
+.cards_view div:hover{
+  font-size: 20px;
+}
+
 .cards_view div p {
   height: inherit;
   line-height: 100%;
