@@ -3,9 +3,10 @@
   <title>KeepGrowing</title>
   <link rel="stylesheet" type="text/css" href="../css/keepGrowing.css">
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-  <script src="../js/navigation.js"></script>
+  <script src="../js/navigation.js">
+  </script>
 </head>
-<body>
+<body onload="setTitle()">
   <div class="navigation_menu">
     <div id="logo">
       <img src="..//images/logo.jpg">
@@ -23,32 +24,29 @@
       <b>New day is a new chalange</b> </br> Today you can make...
     </div>
     <div class="cards_view">
-        <a href="../pages/card.html" >
-          <div  style="background-color:#919845;" >
-            <p>Tree of Wishes</p>
-          </div>
-        </a>
-        <div id="card_1" style="background-color:#4f506e;" onclick="openCard()">
-          <p>Smile and Count</p>
+        <div style="background-color:#919845;">
+          <p id="card_1">card</p>
+        </div>
+        <div style="background-color:#4f506e;">
+          <p id="card_2"></p>
         </div>
         <div style="background-color:#cf915a;">
-          <p>Paper Bowl</p>
+          <p id="card_3"></p>
         </div>
         <div style="background-color:#3e5e30;">
-          <p>Funny Seasons
-          </p>
+          <p id="card_4"></p>
         </div>
         <div style="background-color:#475c5d;">
-          <p>Christmas Baal with</p>
+          <p id="card_5"></p>
         </div>
         <div style="background-color:#57b5b4;">
-          <p>Thank you Card</p>
+          <p id="card_6"></p>
         </div>
         <div style="background-color:#58b05d;">
-          <p>Happy Mother's Day</p>
+          <p id="card_7"></p>
         </div>
         <div style="background-color:#d15475;">
-          <p>1st April. Day of Fun!</p>
+          <p id="card_8"></p>
         </div>
     </div>
 </div>
