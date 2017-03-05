@@ -6,7 +6,7 @@
   <script src="../js/navigation.js">
   </script>
 </head>
-<body onload="setTitle()">
+<body onload="setCardNames()">
   <div class="navigation_menu">
     <div id="logo">
       <img src="..//images/logo.jpg">
@@ -24,28 +24,28 @@
       <b>New day is a new chalange</b> </br> Today you can make...
     </div>
     <div class="cards_view">
-        <div style="background-color:#919845;">
+        <div id="first_card" style="background-color:#919845;" onclick="getCardName(this.id); openCard();">
           <p id="card_1">card</p>
         </div>
-        <div style="background-color:#4f506e;">
+        <div id="second_card" style="background-color:#4f506e;" onclick="getCardName(this.id); openCard();">
           <p id="card_2"></p>
         </div>
-        <div style="background-color:#cf915a;">
+        <div id="third_card" style="background-color:#cf915a;" onclick="getCardName(this.id); openCard();">
           <p id="card_3"></p>
         </div>
-        <div style="background-color:#3e5e30;">
+        <div id="forth_card" style="background-color:#3e5e30;" onclick="getCardName(this.id); openCard();">
           <p id="card_4"></p>
         </div>
-        <div style="background-color:#475c5d;">
+        <div id="fifth_card" style="background-color:#475c5d;" onclick="getCardName(this.id); openCard();">
           <p id="card_5"></p>
         </div>
-        <div style="background-color:#57b5b4;">
+        <div id="sixth_card" style="background-color:#57b5b4;" onclick="getCardName(this.id); openCard();">
           <p id="card_6"></p>
         </div>
-        <div style="background-color:#58b05d;">
+        <div id="seventh_card" style="background-color:#58b05d;" onclick="getCardName(this.id); openCard();">
           <p id="card_7"></p>
         </div>
-        <div style="background-color:#d15475;">
+        <div id="eighth_card" style="background-color:#d15475;" onclick="getCardName(this.id); openCard();">
           <p id="card_8"></p>
         </div>
     </div>
