@@ -1,58 +1,108 @@
 <!DOCTYPE html>
+<html>
+
 <head>
+  <meta charset="UTF-8">
   <title>KeepGrowing</title>
   <link rel="stylesheet" type="text/css" href="../css/keepGrowing.css">
-  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
   <script src="../js/navigation.js">
   </script>
 </head>
+
 <body onload="setCardNames()">
-  <div class="navigation_menu">
+
+  <header class="navigation_menu">
     <div id="logo">
-      <img src="..//images/logo.jpg">
     </div>
     <div id="nav_bar">
       <ul>
-        <li class="nav_bar"><a href="#" class="ui-btn ui-icon-search ui-btn-icon-left" id="search">...</a></li>
+        <li class="nav_bar"><a href="#" class="ui-btn" id="search">  <img src="..//images/Search sign.webp" /></a></li>
         <li class="nav_bar"><a href="#" class="ui-btn" id="about">About</a></li>
         <li class="nav_bar"><a href="#" class="ui-btn" id="signIn">Sign In</a></li>
       </ul>
     </div>
-  </div>
-  <div class="main">
-    <div id="inspiration_phrase">
-      <b>New day is a new chalange</b> </br> Today you can make...
-    </div>
-    <div class="cards_view">
-        <div id="first_card" style="background-color:#919845;" onclick="getCardName(this.id); openCard();">
-          <p id="card_1">card</p>
-        </div>
-        <div id="second_card" style="background-color:#4f506e;" onclick="getCardName(this.id); openCard();">
-          <p id="card_2"></p>
-        </div>
-        <div id="third_card" style="background-color:#cf915a;" onclick="getCardName(this.id); openCard();">
-          <p id="card_3"></p>
-        </div>
-        <div id="forth_card" style="background-color:#3e5e30;" onclick="getCardName(this.id); openCard();">
-          <p id="card_4"></p>
-        </div>
-        <div id="fifth_card" style="background-color:#475c5d;" onclick="getCardName(this.id); openCard();">
-          <p id="card_5"></p>
-        </div>
-        <div id="sixth_card" style="background-color:#57b5b4;" onclick="getCardName(this.id); openCard();">
-          <p id="card_6"></p>
-        </div>
-        <div id="seventh_card" style="background-color:#58b05d;" onclick="getCardName(this.id); openCard();">
-          <p id="card_7"></p>
-        </div>
-        <div id="eighth_card" style="background-color:#d15475;" onclick="getCardName(this.id); openCard();">
-          <p id="card_8"></p>
-        </div>
-    </div>
-</div>
-  <div id='footer'>
-    &copy; 2017 Keep Growing. All rights reserved
-  </div>
-</body>
+  </header>
 
+    <header class="masthead clear">
+      <div class="centered">
+        <div class="site-branding">
+          <h1 class="site-title"></h1>
+          <h2 class="site-title_2">New day is a new challenge</h2>
+          <h4 class="site-title_2_2">Today you can make...</h4>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-area">
+      <div class="centured">
+        <section class="cards">
+          <article class="card">
+            <figure id="first_card" style="background-color:#919845;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card_1.webp" />
+              <p id="card_1">This is the title</p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="second_card" style="background-color:#4E506E;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card_1.webp" />
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="third_card" style="background-color:#D0915A;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card_1.webp" />
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="forth_card" style="background-color:#3E5E30;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card_1.webp" />
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="fifth_card" style="background-color:#465C5D;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card_1.webp" />
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="sixth_card" style="background-color:#57B5B4;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card_1.webp" />
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="seventh_card" style="background-color:#58B05D;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card_1.webp" />
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="eights_card" style="background-color:#D25475;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card_1.webp" />
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="ninth_card" style="background-color:#919845;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card_1.webp" />
+            </figure>
+          </article>
+
+
+        </section>
+      </div>
+    </main>
+
+  <footer>
+    <p id="rights">
+      &#9400; 2017 Keep Growing. All rights reserved
+    </p>
+  </footer>
+
+</body>
 </html>
