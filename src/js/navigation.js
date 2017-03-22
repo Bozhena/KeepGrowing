@@ -1,18 +1,5 @@
-function openCard(id){
-  if(typeof(Storage)!=="undefined")
-  {
-    localStorage.title=document.getElementById(id).innerHTML;
-  }
-  window.location.href="card.html";
-}
-
-function get(id){
-  if(typeof(Storage)!=="undefined" && localStorage.title)
-  {
-    window.document.getElementById('generalCardInfo').innerHTML = localStorage.title;
-    alert(title);
-    document.getElementById(id).innerHTML = localStorage.title;
-  }
+function openCard(){
+   window.location.href="card.html";
 }
 
 var category_1 = [
@@ -65,10 +52,17 @@ var category_8 = [
     '1st April. Day of Fun! 2'
 ];
 
+var category_9 = [
+    '1st April. Day of Fun!',
+    '1st April. Day of Fun! 1',
+    '1st April. Day of Fun! 2'
+];
+
 function getRandomCard(category){
   return Math.floor(Math.random()*category.length);
 }
-function setTitle(){
+
+function setTitles(){
   document.getElementById("card_1").innerHTML=category_1[getRandomCard(category_1)];
   document.getElementById("card_2").innerHTML=category_2[getRandomCard(category_2)];
   document.getElementById("card_3").innerHTML=category_3[getRandomCard(category_3)];
@@ -77,5 +71,13 @@ function setTitle(){
   document.getElementById("card_6").innerHTML=category_6[getRandomCard(category_6)];
   document.getElementById("card_7").innerHTML=category_7[getRandomCard(category_7)];
   document.getElementById("card_8").innerHTML=category_8[getRandomCard(category_8)];
+  document.getElementById("card_9").innerHTML=category_8[getRandomCard(category_9)];
+}
 
+function setTitle(){
+  document.getElementById("title").innerHTML=localStorage.title;
+}
+
+function getCardName(id){
+  localStorage.title = document.getElementById(id).getElementsByTagName('p')[0].innerHTML;
 }
