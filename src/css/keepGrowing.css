@@ -1,22 +1,22 @@
-
 html {
     position: relative;
     min-height: 100%;
 }
 
 body {
-  font-family: monserrat, noto serif;
   font-size: 16px;
-  background-color: #cce7e2;
+  background-image: url(..//images/background.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .centered {
     margin: 0 auto;
     padding: 0 1em;
-    overflow-y:scroll;
 }
 
-@media screen and (min-width: 52em) {
+@media screen (min-width: 52em) {
     .centered {
         max-width: 52em;
     }
@@ -25,11 +25,6 @@ body {
 /*--------------------------------------------------------------
 Header styles minus menu
 --------------------------------------------------------------*/
-
-.masthead {
-    background: #cce7e2;
-}
-
 .site-title {
     margin: 0 0 1em;
     padding: 1em 0;
@@ -39,19 +34,26 @@ Header styles minus menu
 }
 
 .site-title_2 {
+  font-family: "Montserrat";
+  font-weight: bold;
   margin: 0 0 0;
+  margin-top: 100px;
   padding: 0 0;
-  font-size: 24px;
+  font-size: 36px;
   text-align: center;
   color: #3D4554;
 }
 
 .site-title_2_2 {
+  font-family: "Noto Serif";
+  font-weight: normal;
   margin: 0 0 0;
   padding: 0 0;
-  font-size: 18px;
+  font-size: 24px;
   text-align: center;
   color: #3D4554;
+  margin-top: 15px;
+  margin-bottom: 100px;
 }
 
 @media screen and (min-width: 44.44em) {
@@ -74,13 +76,13 @@ Header styles minus menu
   z-index: 9999;
   margin: 0 auto;
   padding: 0 1em;
-  background-color: #cce7e2;
+
 }
 
 #logo {
   content: url("..//images/logo.webp");
   float:left;
-  margin-left: 2em;
+  margin-left: 4em;
   height:80%;
   margin-top: 2em;
   width: auto;
@@ -93,7 +95,7 @@ Header styles minus menu
   float:right;
   list-style-type: none;
   width:auto;
-  margin-right: 6em;
+  margin-right: 7em;
   height:100%;
   margin-top: 2em;
 }
@@ -103,12 +105,13 @@ Header styles minus menu
 }
 
 #search {
-   border:0px;
+  border:0px;
   margin-top: -0.3em;
   margin-right: -0.3em;
   -ms-transform: scale(0.7,0.7); /* IE 9 */
   -webkit-transform: scale(0.7,0.7); /* Safari */
   transform: scale(0.7,0.7);
+  margin-right: 5px;
  }
 
 #about {
@@ -116,13 +119,16 @@ Header styles minus menu
     color:#4E5965;
     font-family: noto Serif;
     font-weight: normal;
-    margin-right: 7px;
+    margin-right: 25px;
  }
 
 #signIn {
   color:#4E5965;
+  padding-left: 22px;
+  padding-right: 22px;
   font-family:Noto Serif;
-  border-radius:25px;
+  border-radius: 25px;
+  border-color: #63BB34;
   font-weight: normal;
 }
 
@@ -145,11 +151,11 @@ figure {
 
 p {
   position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-family: montserrat;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: montserrat;
 }
 
 .card:hover {
@@ -229,15 +235,15 @@ figure:hover {
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: flex-start;
+            justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 
   .card {
-    margin-bottom: 1em;
-    margin-right: 0.5em;
-    margin-left: 0.5em;
+    margin-bottom: 18px;
+    margin-right: 9px;
+    margin-left: 9px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -247,6 +253,7 @@ figure:hover {
     /* width: calc(24% - 1em); */
   }
 } /* mq 60em*/
+
 
 footer {
     position: absolute;

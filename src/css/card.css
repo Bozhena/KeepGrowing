@@ -1,4 +1,48 @@
-#title{
+#title {
   text-align: center;
   color:white;
+}
+
+.title {
+  margin-top: 200px;
+}
+
+.card_body {
+  transform: scale(0.8, 0.8);
+  -ms-transform: scale(0.8, 0.8);
+  -webkit-transform: scale(0.8, 0.8);
+  white-space:nowrap;
+  background-size:100%;
+  overflow-x: hidden;
+  position:relative;
+}
+
+.card_body img {
+  width: 7%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card_body .top {
+  width: 60%;
+}
+
+.card_body .info_clicked {
+  width: 8%;
+}
+
+.card_desc {
+  width: 85%;
+  height: 240px;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: red;
+  float: left;
+  margin-left: 4.5%;
+}
+
+.left {
+  float: left;
+  margin-top: 5%;
+  margin-right: -4%;
 }
