@@ -6,9 +6,16 @@ html {
 body {
   font-size: 16px;
   background-image: url(..//images/background.jpg);
-  background-size: contain;
+
   background-repeat: no-repeat;
-  background-size: cover;
+
+
+    background-attachment:fixed;
+
+
+background-size: 100% 100%;
+
+
 }
 
 .centered {
@@ -37,7 +44,8 @@ Header styles minus menu
   font-family: "Montserrat";
   font-weight: bold;
   margin: 0 0 0;
-  margin-top: 100px;
+  margin-top: 182px;
+  margin-right: 3px;
   padding: 0 0;
   font-size: 36px;
   text-align: center;
@@ -50,9 +58,11 @@ Header styles minus menu
   margin: 0 0 0;
   padding: 0 0;
   font-size: 24px;
+  letter-spacing: -0.72px;
   text-align: center;
   color: #3D4554;
-  margin-top: 15px;
+  margin-top: 19px;
+  margin-right: -3px;
   margin-bottom: 100px;
 }
 
@@ -75,29 +85,31 @@ Header styles minus menu
   top: 0;
   z-index: 9999;
   margin: 0 auto;
-  padding: 0 1em;
+  padding: 0;
+  display: block;
+
 
 }
 
 #logo {
   content: url("..//images/logo.webp");
   float:left;
-  margin-left: 4em;
-  height:80%;
-  margin-top: 2em;
+  margin-left: 100px;
+  height:72px;
+  margin-top: 58px;
   width: auto;
-  -ms-transform: scale(0.8,0.8); /* IE 9 */
-  -webkit-transform: scale(0.8,0.8); /* Safari */
-  transform: scale(0.8,0.8);
+  -ms-transform: scale(1,1); /* IE 9 */
+  -webkit-transform: scale(1,1); /* Safari */
+  transform: scale(1,1);
 }
 
 #nav_bar {
   float:right;
   list-style-type: none;
   width:auto;
-  margin-right: 7em;
+  margin-right: 100px;
   height:100%;
-  margin-top: 2em;
+  margin-top: 58px;
 }
 
 .nav_bar{
@@ -106,34 +118,49 @@ Header styles minus menu
 
 #search {
   border:0px;
-  margin-top: -0.3em;
-  margin-right: -0.3em;
-  -ms-transform: scale(0.7,0.7); /* IE 9 */
-  -webkit-transform: scale(0.7,0.7); /* Safari */
-  transform: scale(0.7,0.7);
-  margin-right: 5px;
+
+  -ms-transform: scale(1,1); /* IE 9 */
+  -webkit-transform: scale(1,1); /* Safari */
+  transform: scale(1,1);
+  margin-right: 22px;
+  margin-top: 3px;
+
  }
 
 #about {
     border:0px;
     color:#4E5965;
-    font-family: noto Serif;
-    font-weight: normal;
-    margin-right: 25px;
- }
+    font-family: "Noto Serif";
+    font-weight: bold;
+    margin-right: 38px;
+    font-size: 24px;
+    margin-top: -2px;
+  }
 
 #signIn {
   color:#4E5965;
-  padding-left: 22px;
-  padding-right: 22px;
-  font-family:Noto Serif;
-  border-radius: 25px;
-  border-color: #63BB34;
-  font-weight: normal;
+
+  font-family: "Noto Serif";
+  border-radius: 17px;
+  border-width: 4px;
+  border-color: #63BA34;
+  font-weight: bold;
+  font-size: 24px;
+margin-top: -5px;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.main-area {
+  margin-top: -15px;
+}
+
+.centured .cards {
+  margin-left: -13px;
+  margin-right: -13px;
 }
 
 .card  {
-  margin-bottom: 2em;
   cursor: pointer; cursor: hand;
 }
 
@@ -146,29 +173,33 @@ Header styles minus menu
 figure {
   display: inline-block;
   position: relative;
-  border-radius: 8px;
+  border-radius: 17px;
 }
 
-p {
+.card p {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  font-family: montserrat;
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-size: 20px;
+
+
 }
 
 .card:hover {
-  font-size: 18px;
+  font-size: 28px;
 }
 
 figure:hover {
   -webkit-box-shadow: 3px 4px 10px 0px rgba(52, 50, 50, 0.85);
   -moz-box-shadow:    3px 4px 10px 0px rgba(52, 50, 50, 0.85);
   box-shadow:         3px 4px 10px 0px rgba(52, 50, 50, 0.85);
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+  border-radius: 17px;
 }
 
 .centured {
@@ -241,7 +272,7 @@ figure:hover {
   }
 
   .card {
-    margin-bottom: 18px;
+    margin-bottom: 15px;
     margin-right: 9px;
     margin-left: 9px;
     display: -webkit-box;
@@ -261,12 +292,14 @@ footer {
     bottom: 0;
     height: 100px;
     width: 100%;
+
 }
 
 #rights {
     height: auto;
     margin: auto;
     width: auto;
-    font-family: noto serif;
+    font-family: "Noto Serif";
     color: #4E5864;
+    font-size: 24px;
 }
