@@ -6,16 +6,9 @@ html {
 body {
   font-size: 16px;
   background-image: url(..//images/background.jpg);
-
   background-repeat: no-repeat;
-
-
-    background-attachment:fixed;
-
-
-background-size: 100% 100%;
-
-
+  background-attachment:fixed;
+  background-size: 100% 100%;
 }
 
 .centered {
@@ -87,8 +80,6 @@ Header styles minus menu
   margin: 0 auto;
   padding: 0;
   display: block;
-
-
 }
 
 #logo {
@@ -118,13 +109,11 @@ Header styles minus menu
 
 #search {
   border:0px;
-
   -ms-transform: scale(1,1); /* IE 9 */
   -webkit-transform: scale(1,1); /* Safari */
   transform: scale(1,1);
   margin-right: 22px;
   margin-top: 3px;
-
  }
 
 #about {
@@ -139,14 +128,13 @@ Header styles minus menu
 
 #signIn {
   color:#4E5965;
-
   font-family: "Noto Serif";
   border-radius: 17px;
   border-width: 4px;
   border-color: #63BA34;
   font-weight: bold;
   font-size: 24px;
-margin-top: -5px;
+  margin-top: -5px;
   padding-left: 36px;
   padding-right: 36px;
 }
@@ -171,8 +159,9 @@ margin-top: -5px;
 }
 
 figure {
-  display: inline-block;
   position: relative;
+  text-align: center;
+  width: 100%;
   border-radius: 17px;
 }
 
@@ -181,16 +170,17 @@ figure {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  margin-top: -12px;
   color: #fff;
   font-family: "Montserrat";
-  font-weight: normal;
-  font-size: 20px;
-
-
+  font-weight: lighter;
+  font-size: 24px;
 }
 
 .card:hover {
-  font-size: 28px;
+  font-size: 30px;
 }
 
 figure:hover {
@@ -285,21 +275,21 @@ figure:hover {
   }
 } /* mq 60em*/
 
-
 footer {
-    position: absolute;
-    left: 0;
     bottom: 0;
-    height: 100px;
+    position: fixed;
+    text-align: center;
     width: 100%;
-
 }
 
 #rights {
-    height: auto;
-    margin: auto;
-    width: auto;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
     font-family: "Noto Serif";
     color: #4E5864;
     font-size: 24px;
+    height: 68px;
+    letter-spacing: -0.72px;
 }
