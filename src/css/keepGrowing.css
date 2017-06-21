@@ -292,7 +292,7 @@ footer {
 
 #rights {
     bottom: 0;
-    position: static;
+    position: sticky;
     text-align: center;
     width: 100%;
     font-family: "Noto Serif";
