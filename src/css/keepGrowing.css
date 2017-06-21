@@ -253,6 +253,7 @@ figure:hover {
             flex: 0 1 calc(33% - 0.5em);
     /* width: calc(33% - 1em); */
   }
+
 } /* mq 50em*/
 
 @media screen and (min-width: 60em) {
@@ -292,7 +293,7 @@ footer {
 
 #rights {
     bottom: 0;
-    position: sticky;
+    position: fixed;
     text-align: center;
     width: 100%;
     font-family: "Noto Serif";
