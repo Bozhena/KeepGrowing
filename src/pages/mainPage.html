@@ -20,7 +20,12 @@
     </div>
     <div id="nav_bar">
       <ul>
-        <li class="nav_bar"><a href="#" class="ui-btn" id="search">  <img src="..//images/Search Tool with ....webp" /></a></li>
+        <li class="nav_bar">
+            <input type="text" class="ui-btn" id="search" placeholder="What are you looking for?" onclick="activateSearch(this.id)" ></input>
+          <!-- <a href="#" class="ui-btn" id="search" onclick="activateSearch(this.id)">
+          <input type="text" id="searh_input"><span class="blinking-cursor">|</span></input>
+        </a> -->
+        </li>
         <li class="nav_bar"><a href="#" class="ui-btn" id="about">About</a></li>
         <li class="nav_bar"><a href="#" class="ui-btn" id="signIn">Sign In</a></li>
       </ul>

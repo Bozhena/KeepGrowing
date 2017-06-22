@@ -120,8 +120,41 @@ Header styles minus menu
   -webkit-transform: scale(1,1); /* Safari */
   transform: scale(1,1);
   margin-right: 22px;
-  margin-top: 3px;
+  margin-top: 9px;
+
+  width: 50px;
+  background: transparent;
+  border: none;
+  -webkit-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+  background-image: url('..//images/Search Tool with ....webp');
+  background-repeat: no-repeat;
+  opacity: 1;
+  outline: none;
+  padding-left: 50px;
+  padding-top: 10px;
+
  }
+
+ #search:focus {
+   width: 800px;
+   height: 71px;
+   border-style:solid;
+   border-width: 1px;
+   border-color: pink;
+   border-radius: 7px;
+   background-image: url('..//images/Search Tool.webp');
+ }
+
+ :focus::-webkit-input-placeholder { /* Chrome */
+   opacity: 2;
+ }
+
+ ::-webkit-input-placeholder { /* Chrome */
+   color: #EFF2AE;
+   transition: opacity 1s;
+   opacity: 0;
+}
 
 #about {
     border:0px;

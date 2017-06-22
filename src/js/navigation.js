@@ -81,3 +81,7 @@ function setTitle(){
 function getCardName(id){
   localStorage.title = document.getElementById(id).getElementsByTagName('p')[0].innerHTML;
 }
+
+function activateSearch(id){
+  //document.getElementById(id).style.backgroundImage.url = "..//images/Search Tool.webp";
+}
