@@ -82,6 +82,10 @@ function getCardName(id){
   localStorage.title = document.getElementById(id).getElementsByTagName('p')[0].innerHTML;
 }
 
-function activateSearch(id){
-  //document.getElementById(id).style.backgroundImage.url = "..//images/Search Tool.webp";
-}
+function handle(e){
+     if(e.keyCode === 13){
+         e.preventDefault(); // Ensure it is only this code that rusn
+
+         alert("Enter was pressed.You will be redirected to the serach results page");
+     }
+ }

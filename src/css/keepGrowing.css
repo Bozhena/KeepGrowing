@@ -95,6 +95,7 @@ Header styles minus menu
   margin-left: 100px;
   height:72px;
   margin-top: 58px;
+  margin-right: -80px;
   width: auto;
   -ms-transform: scale(1,1); /* IE 9 */
   -webkit-transform: scale(1,1); /* Safari */
@@ -122,28 +123,43 @@ Header styles minus menu
   margin-right: 22px;
   margin-top: 9px;
 
-  width: 50px;
+  width: 10px;
   background: transparent;
   border: none;
-  -webkit-transition: width 1s ease-in-out;
-  transition: width 1s ease-in-out;
+  -webkit-transition: width 1s;
+  transition: width 1s;
   background-image: url('..//images/Search Tool with ....webp');
   background-repeat: no-repeat;
   opacity: 1;
   outline: none;
   padding-left: 50px;
   padding-top: 10px;
-
+  text-align: left;
  }
 
  #search:focus {
-   width: 800px;
+   text-align: left;
+   width: 500px;
    height: 71px;
    border-style:solid;
    border-width: 1px;
    border-color: pink;
    border-radius: 7px;
    background-image: url('..//images/Search Tool.webp');
+   background-position: left;
+   background-position: 3%;
+   margin-top: -10px;
+   margin-right: 60px;
+   padding-left: 13%;
+ }
+
+::-webkit-search-cancel-button{
+  -webkit-appearance: none;
+  background-position: right;
+  height: 20px;
+  padding-right: 30px;
+  background: url('..//images/Cancel Sign.webp');
+  background-repeat: no-repeat;
  }
 
  :focus::-webkit-input-placeholder { /* Chrome */
@@ -152,6 +168,10 @@ Header styles minus menu
 
  ::-webkit-input-placeholder { /* Chrome */
    color: #EFF2AE;
+   text-align: left;
+   font-family: "Noto Serif";
+   font-weight: bold;
+   font-size: 20;
    transition: opacity 1s;
    opacity: 0;
 }
