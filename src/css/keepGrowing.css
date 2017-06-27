@@ -168,7 +168,17 @@ Header styles minus menu
    margin-top: -10px;
    margin-right: 60px;
  }
- 
+
+ #search_result:focus {
+   background-image: url('..//images/search_white.png');
+   background-repeat: no-repeat;
+   background-position: left;
+   background-position: 3%;
+   margin-top: -10px;
+   margin-right: 60px;
+   padding-left: 13%;
+ }
+
 ::-webkit-search-cancel-button{
   -webkit-appearance: none;
   background-position: right;

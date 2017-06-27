@@ -112,6 +112,16 @@ function search(e, id){
      }
 }
 
+function changeIcon(id){
+  if (document.getElementById(id).value!==''){
+    document.getElementById(id).style.backgroundImage = "url('..//images/search_white.png')";
+  }
+  if (document.getElementById(id).value.length<=1&&document.getElementById(id).value===''){
+      document.getElementById(id).style.backgroundImage = "url('..//images/Search Tool.webp')";
+  }
+}
+
+
 function searching(search_request){
   var result = [];
   var category = [category_1, category_2, category_3, category_4, category_5, category_6, category_7, category_8, category_9]
