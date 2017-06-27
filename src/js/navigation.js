@@ -104,3 +104,11 @@ function onPageLoad() {
   init();
   setTitles();
 }
+
+function handle(e){
+     if(e.keyCode === 13){
+         e.preventDefault(); // Ensure it is only this code that rusn
+
+         alert("Enter was pressed.You will be redirected to the serach results page");
+     }
+ }
