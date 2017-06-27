@@ -87,11 +87,11 @@ Header styles minus menu
   padding: 0;
   display: block;
   overflow: hidden;
-  -webkit-transition: height 0.3s;
-  -moz-transition: height 0.3s;
-  -ms-transition: height 0.3s;
-  -o-transition: height 0.3s;
-  transition: height 0.3s;
+  -webkit-transition: opacity 0.3s, visibility 0.3s;
+  -moz-transition: opacity 0.3s, visibility 0.3s;
+  -ms-transition: opacity 0.3s, visibility 0.3s;
+  -o-transition: opacity 0.3s, visibility 0.3s;
+  transition: opacity 0.3s, visibility 0.3s;
  }
 
 #logo {
@@ -120,17 +120,12 @@ Header styles minus menu
   float:left;
 }
 
-.navigation_menu.smaller {
-  height: 0px;
-}
-
 #search {
   border:0px;
   -ms-transform: scale(1,1); /* IE 9 */
   -webkit-transform: scale(1,1); /* Safari */
   transform: scale(1,1);
   margin-right: 22px;
-  margin-top: 3px;
   width: 10px;
   background: transparent;
   border: none;
@@ -244,11 +239,8 @@ figure {
   color: #fff;
   font-family: "Montserrat";
   font-weight: lighter;
-  font-size: 24px;
-}
-
-.card:hover {
-  font-size: 30px;
+  font-size: 22px;
+  /*font-size: 24px;*/
 }
 
 figure:hover {
@@ -258,6 +250,7 @@ figure:hover {
   -webkit-border-radius: 17px;
   -moz-border-radius: 17px;
   border-radius: 17px;
+  font-size: 25px;
 }
 
 .centured {
@@ -329,24 +322,25 @@ figure:hover {
       -ms-transform: scale(0.9,0.9); /* IE 9 */
       -webkit-transform: scale(0.9,0.9); /* Safari */
       transform: scale(0.9,0.9);
-    }
-
-    figure:hover {
       font-size: 22px;
     }
 
-    #logo{
+    figure:hover p {
+      font-size: 24px;
+    }
+
+    #logo {
       -ms-transform: scale(0.7,0.7); /* IE 9 */
       -webkit-transform: scale(0.7,0.7); /* Safari */
       transform: scale(0.7,0.7);
       margin-left: 80px;
     }
 
-    #search{
+    #search {
       -ms-transform: scale(0.7,0.7); /* IE 9 */
       -webkit-transform: scale(0.7,0.7); /* Safari */
       transform: scale(0.7,0.7);
-      margin-right: -20px;
+      margin-right: -10px;
     }
 
     #about {
@@ -367,7 +361,9 @@ figure:hover {
     }
 
     .navigation_menu.smaller {
-      height: 0px;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s, visibility 0.3s;
     }
 
     .site-title_2 {
@@ -380,9 +376,9 @@ figure:hover {
       font-size: 18px;
     }
 
-    .card p {
+    /*.card p {
       font-size: 20px;
-    }
+    }*/
 
     footer {
       -ms-transform: scale(0.7,0.7); /* IE 9 */
