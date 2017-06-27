@@ -2,20 +2,17 @@ function openCard(){
    window.location.href="card.html";
 }
 
-
 var category_1 = [
     'Tree of Wishes',
     'Tree of Wishes 1',
     'Tree of Wishes 2'
 ];
 
-
 var category_2 = [
     'Smile and Count',
     'Smile and Count 1',
     'Smile and Count 2'
 ];
-
 
 var category_3 = [
     'Paper Bowl',
@@ -87,21 +84,35 @@ function getCardName(id){
 function search(e, id){
      if(e.keyCode === 13){
         e.preventDefault(); // Ensure it is only this code that rusn
-        localStorage.search = document.getElementById(id).value;
-        alert("You are searching for: " + localStorage.search);
-        searching(localStorage.search);
-        // window.location.href="searchResults.html";
+        localStorage.search_request = document.getElementById(id).value;
+        var res = searching(localStorage.search_request);
+        window.location.href="searchResults.html";
      }
 }
 
-
-function searching(search){
+function searching(search_request){
+  var result = [];
   var category = [category_1, category_2, category_3, category_4, category_5, category_6, category_7, category_8, category_9]
   category.forEach(function (item, search){
+    var j = 0;
     for (i=0; i<item.length; i++){
-      if (item[i].includes(search)){
-        alert(item[i]);
+      if (item[i].includes(search_request)){
+        result[j] = item[i];
+        j++;
       }
-  }
+    }
+  });
+  localStorage["result"] = JSON.stringify(result);
+}
+
+
+
+function searchResult(){
+  document.getElementById("search_result").value = localStorage.search_request;
+  var i = 1;
+  JSON.parse(localStorage["result"]).forEach(function (item){
+    document.getElementById("card_"+i).innerHTML = item;
+    document.getElementById("card_"+i).parentNode.style.visibility="visible";
+    i++;
   });
 }

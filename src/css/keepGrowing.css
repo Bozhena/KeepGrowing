@@ -153,6 +153,19 @@ Header styles minus menu
    padding-left: 13%;
  }
 
+ #search_result {
+   text-align: left;
+   width: 500px;
+   height: 71px;
+   border-style:solid;
+   border-width: 1px;
+   border-color: pink;
+   border-radius: 7px;
+   background: transparent;
+   margin-top: -10px;
+   margin-right: 60px;
+ }
+ 
 ::-webkit-search-cancel-button{
   -webkit-appearance: none;
   background-position: right;
