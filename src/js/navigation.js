@@ -1,3 +1,21 @@
+function init() {
+    window.addEventListener('scroll', function(e){
+
+        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+            shrinkOn = 90,
+            header = document.querySelector(".navigation_menu");
+            console.log(distanceY)
+
+        if (distanceY > shrinkOn) {
+            classie.add(header,"smaller");
+        } else {
+            if (classie.has(header,"smaller")) {
+                classie.remove(header,"smaller");
+            }
+        }
+    });
+}
+
 function openCard(){
    window.location.href="card.html";
 }
@@ -80,6 +98,17 @@ function getCardName(id){
   localStorage.title = document.getElementById(id).getElementsByTagName('p')[0].innerHTML;
 }
 
+<<<<<<< HEAD
+=======
+function onPageLoad() {
+  init();
+  setTitles();
+}
+
+function handle(e){
+     if(e.keyCode === 13){
+         e.preventDefault(); // Ensure it is only this code that rusn
+>>>>>>> a1c255f6c410b60bc0a45269a03558f78c16bf88
 
 function search(e, id){
      if(e.keyCode === 13){
