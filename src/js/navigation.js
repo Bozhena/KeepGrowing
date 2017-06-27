@@ -115,9 +115,9 @@ function search(e, id){
 function searching(search_request){
   var result = [];
   var category = [category_1, category_2, category_3, category_4, category_5, category_6, category_7, category_8, category_9]
+  var j = 0;
   category.forEach(function (item, search){
-    var j = 0;
-    for (i=0; i<item.length; i++){
+        for (i=0; i<item.length; i++){
       if (item[i].includes(search_request)){
         result[j] = item[i];
         j++;
