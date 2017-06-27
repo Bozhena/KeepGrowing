@@ -116,7 +116,7 @@ function searching(search_request){
   var result = [];
   var category = [category_1, category_2, category_3, category_4, category_5, category_6, category_7, category_8, category_9]
   var j = 0;
-  category.forEach(function (item, search_request){
+  category.forEach(function (item, search){
     for (i=0; i<item.length; i++){
       if (item[i].toLowerCase().includes(search_request.toLowerCase())){
         result[j] = item[i];
