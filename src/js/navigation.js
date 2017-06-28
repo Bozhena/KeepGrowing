@@ -136,17 +136,24 @@ function disableBlur(id){
 
 function searching(search_request){
   var result = [];
+  var search_requests = search_request.split(" ");
   var category = [category_1, category_2, category_3, category_4, category_5, category_6, category_7, category_8, category_9]
   var j = 0;
-  category.forEach(function (item, search){
+
+  category.forEach(function (item, index){
     for (i=0; i<item.length; i++){
-      if (item[i].toLowerCase().includes(search_request.toLowerCase())){
-        result[j] = item[i];
-        j++;
-      }
+      search_requests.forEach(function (search_item, index){
+        if (item[i].toLowerCase().includes(search_item.toLowerCase())){
+          result[j] = item[i];
+          j++;
+        }
+      });
     }
   });
-  localStorage["result"] = JSON.stringify(result);
+
+  localStorage["result"]  = JSON.stringify(result.filter(function(elem, index, self) {
+      return index == self.indexOf(elem);
+  }));
 }
 
 
@@ -156,7 +163,7 @@ function searchResult(){
   var i = 1;
   JSON.parse(localStorage["result"]).forEach(function (item){
     document.getElementById("card_"+i).innerHTML = item;
-    document.getElementById("card_"+i).parentNode.style.visibility="visible";
+    document.getElementById("card_"+i).parentNode.style.display="";
     i++;
   });
 }

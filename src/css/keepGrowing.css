@@ -144,6 +144,7 @@ Header styles minus menu
   font-family: "Noto Serif";
   font-weight: bold;
   font-size: 24;
+
  }
 
  #search:focus {
@@ -151,9 +152,9 @@ Header styles minus menu
    width: 500px;
    height: 71px;
    border-style:solid;
-   border-width: 1px;
+   border-width: 2px;
    border-color: #D15475;
-   border-radius: 7px;
+   border-radius: 17px;
    background-image: url('..//images/Search Tool.webp');
    background-position: left;
    background-position: 3%;
@@ -167,9 +168,9 @@ Header styles minus menu
    width: 500px;
    height: 71px;
    border-style:solid;
-   border-width: 1px;
+   border-width: 2px;
    border-color: #D15475;
-   border-radius: 7px;
+   border-radius: 17px;
    background: transparent;
    margin-top: -10px;
    margin-right: 60px;
@@ -208,7 +209,7 @@ Header styles minus menu
  }
 
  ::-webkit-input-placeholder { /* Chrome */
-   color: #EFF2AE;
+   color: #EFF2EA;
    text-align: left;
    font-family: "Noto Serif";
    font-weight: bold;
