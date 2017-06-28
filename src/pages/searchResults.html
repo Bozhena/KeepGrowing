@@ -10,11 +10,10 @@
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
   <script src="../js/navigation.js"></script>
-  <script src="../js/classie.js"></script>
+  <script src="../js/search.js"></script>
 </head>
 
-
-<body onload="onPageLoad();">
+<body onload="searchResult();">
 
   <header class="navigation_menu">
     <div id="logo">
@@ -22,7 +21,7 @@
     <div id="nav_bar">
       <ul>
         <li class="nav_bar">
-            <input type="search" class="ui-btn" id="search" placeholder="What are you looking for?" oninput="changeIcon(this.id);"  onkeypress="search(event, this.id);"></input>
+            <input type="search" class="ui-btn" id="search_result" placeholder="What are you looking for?" oninput="changeIcon(this.id);" onkeypress="search(event, this.id);"></input>
         </li>
         <li class="nav_bar"><a href="#" class="ui-btn" id="about">About</a></li>
         <li class="nav_bar"><a href="#" class="ui-btn" id="signIn">Sign In</a></li>
@@ -44,56 +43,56 @@
       <div class="centured">
         <section class="cards">
           <article class="card">
-            <figure id="first_card" style="background-color:#919845;" onclick="getCardName(this.id); openCard();">
+            <figure id="first_card" style="background-color:#919845; visibility:hidden; " onclick="getCardName(this.id); openCard();">
               <img src="..//images/Card.webp" />
               <p id="card_1"></p>
             </figure>
           </article>
 
           <article class="card">
-            <figure id="second_card" style="background-color:#52535C;" onclick="getCardName(this.id); openCard();">
+            <figure id="second_card" style="background-color:#52535C; visibility:hidden;" onclick="getCardName(this.id); openCard();">
               <img src="..//images/Card.webp" />
               <p id="card_2"></p>
             </figure>
           </article>
 
           <article class="card">
-            <figure id="third_card" style="background-color:#D0915A;" onclick="getCardName(this.id); openCard();">
+            <figure id="third_card" style="background-color:#D0915A; visibility:hidden;" onclick="getCardName(this.id); openCard();">
               <img src="..//images/Card.webp" />
               <p id="card_3"></p>
             </figure>
           </article>
 
           <article class="card">
-            <figure id="forth_card" style="background-color:#3E5E30;" onclick="getCardName(this.id); openCard();">
+            <figure id="forth_card" style="background-color:#3E5E30; visibility:hidden; " onclick="getCardName(this.id); openCard();">
               <img src="..//images/Card.webp" />
               <p id="card_4"></p>
             </figure>
           </article>
 
           <article class="card">
-            <figure id="fifth_card" style="background-color:#BBA231;" onclick="getCardName(this.id); openCard();">
+            <figure id="fifth_card" style="background-color:#BBA231; visibility:hidden;" onclick="getCardName(this.id); openCard();">
               <img src="..//images/Card.webp" />
               <p id="card_5"></p>
             </figure>
           </article>
 
           <article class="card">
-            <figure id="sixth_card" style="background-color:#57B5B4;" onclick="getCardName(this.id); openCard();">
+            <figure id="sixth_card" style="background-color:#57B5B4; visibility:hidden; " onclick="getCardName(this.id); openCard();">
               <img src="..//images/Card.webp" />
               <p id="card_6"></p>
             </figure>
           </article>
 
           <article class="card">
-            <figure id="seventh_card" style="background-color:#58B05D;" onclick="getCardName(this.id); openCard();">
+            <figure id="seventh_card" style="background-color:#58B05D; visibility:hidden;" onclick="getCardName(this.id); openCard();">
               <img src="..//images/Card.webp" />
               <p id="card_7"></p>
             </figure>
           </article>
 
           <article class="card">
-            <figure id="eights_card" style="background-color:#D25475;" onclick="getCardName(this.id); openCard();">
+            <figure id="eights_card" style="background-color:#D25475; visibility:hidden;" onclick="getCardName(this.id); openCard();">
               <img src="..//images/Card.webp" />
               <p id="card_8"></p>
             </figure>

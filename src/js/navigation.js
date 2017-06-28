@@ -26,13 +26,11 @@ var category_1 = [
     'Tree of Wishes 2'
 ];
 
-
 var category_2 = [
     'Smile and Count',
     'Smile and Count 1',
     'Smile and Count 2'
 ];
-
 
 var category_3 = [
     'Paper Bowl',
@@ -89,7 +87,7 @@ function setTitles(){
   document.getElementById("card_6").innerHTML=category_6[getRandomCard(category_6)];
   document.getElementById("card_7").innerHTML=category_7[getRandomCard(category_7)];
   document.getElementById("card_8").innerHTML=category_8[getRandomCard(category_8)];
-  document.getElementById("card_9").innerHTML=category_8[getRandomCard(category_9)];
+  document.getElementById("card_9").innerHTML=category_9[getRandomCard(category_9)];
 }
 
 function setTitle(){
@@ -105,10 +103,48 @@ function onPageLoad() {
   setTitles();
 }
 
-function handle(e){
+function search(e, id){
      if(e.keyCode === 13){
-         e.preventDefault(); // Ensure it is only this code that rusn
-
-         alert("Enter was pressed.You will be redirected to the serach results page");
+        e.preventDefault(); // Ensure it is only this code that rusn
+        localStorage.search_request = document.getElementById(id).value;
+        var res = searching(localStorage.search_request);
+        window.location.href="searchResults.html";
      }
- }
+}
+
+function changeIcon(id){
+  if (document.getElementById(id).value!==''){
+    document.getElementById(id).style.backgroundImage = "url('..//images/search_white.png')";
+  }
+  if (document.getElementById(id).value.length<=1&&document.getElementById(id).value===''){
+      document.getElementById(id).style.backgroundImage = "url('..//images/Search Tool.webp')";
+  }
+}
+
+
+function searching(search_request){
+  var result = [];
+  var category = [category_1, category_2, category_3, category_4, category_5, category_6, category_7, category_8, category_9]
+  var j = 0;
+  category.forEach(function (item, search){
+    for (i=0; i<item.length; i++){
+      if (item[i].toLowerCase().includes(search_request.toLowerCase())){
+        result[j] = item[i];
+        j++;
+      }
+    }
+  });
+  localStorage["result"] = JSON.stringify(result);
+}
+
+
+
+function searchResult(){
+  document.getElementById("search_result").value = localStorage.search_request;
+  var i = 1;
+  JSON.parse(localStorage["result"]).forEach(function (item){
+    document.getElementById("card_"+i).innerHTML = item;
+    document.getElementById("card_"+i).parentNode.style.visibility="visible";
+    i++;
+  });
+}

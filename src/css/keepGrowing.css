@@ -156,6 +156,29 @@ Header styles minus menu
    padding-left: 13%;
  }
 
+ #search_result {
+   text-align: left;
+   width: 500px;
+   height: 71px;
+   border-style:solid;
+   border-width: 1px;
+   border-color: pink;
+   border-radius: 7px;
+   background: transparent;
+   margin-top: -10px;
+   margin-right: 60px;
+ }
+
+ #search_result:focus {
+   background-image: url('..//images/search_white.png');
+   background-repeat: no-repeat;
+   background-position: left;
+   background-position: 3%;
+   margin-top: -10px;
+   margin-right: 60px;
+   padding-left: 13%;
+ }
+
 ::-webkit-search-cancel-button{
   -webkit-appearance: none;
   background-position: right;
