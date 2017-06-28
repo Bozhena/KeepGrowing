@@ -138,6 +138,12 @@ Header styles minus menu
   padding-left: 50px;
   padding-top: 10px;
   text-align: left;
+
+  color: #4e5965;
+  text-align: left;
+  font-family: "Noto Serif";
+  font-weight: bold;
+  font-size: 24;
  }
 
  #search:focus {
@@ -146,7 +152,7 @@ Header styles minus menu
    height: 71px;
    border-style:solid;
    border-width: 1px;
-   border-color: pink;
+   border-color: #D15475;
    border-radius: 7px;
    background-image: url('..//images/Search Tool.webp');
    background-position: left;
@@ -162,11 +168,20 @@ Header styles minus menu
    height: 71px;
    border-style:solid;
    border-width: 1px;
-   border-color: pink;
+   border-color: #D15475;
    border-radius: 7px;
    background: transparent;
    margin-top: -10px;
    margin-right: 60px;
+   background-repeat: no-repeat;
+   background-position: left;
+   background-position: 3%;
+
+   color: #4e5965;
+   text-align: left;
+   font-family: "Noto Serif";
+   font-weight: bold;
+   font-size: 24;
  }
 
  #search_result:focus {
@@ -200,6 +215,10 @@ Header styles minus menu
    font-size: 20;
    transition: opacity 1s;
    opacity: 0;
+}
+
+#search_result::-webkit-input-placeholder { /* Chrome */
+  opacity: 2;
 }
 
 #about {

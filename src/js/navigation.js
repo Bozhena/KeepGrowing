@@ -121,6 +121,18 @@ function changeIcon(id){
   }
 }
 
+function useDefaultIcon(id){
+  document.getElementById(id).style.backgroundImage = "url('..//images/Search Tool with ....webp')";
+  document.getElementById(id).value = "";
+}
+
+function useDefault(id){
+    document.getElementById(id).style.backgroundImage = "url('..//images/Search Tool.webp')";
+}
+
+function disableBlur(id){
+  document.getElementById(id).style.paddingLeft = "13%";
+}
 
 function searching(search_request){
   var result = [];
