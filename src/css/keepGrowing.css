@@ -223,7 +223,7 @@ Header styles minus menu
 }
 
 #about {
-  border:0px;
+  border-width: 0px;
   color:#4E5965;
   font-family: "Noto Serif";
   font-weight: bold;
@@ -331,6 +331,7 @@ figure:hover {
 @media screen and (min-width: 1200px)
   and (max-width: 1600px)
   and (-webkit-min-device-pixel-ratio: 1){
+
     .cards {
       margin-top: 1em;
       display: -webkit-box;
@@ -398,6 +399,18 @@ figure:hover {
       -webkit-transform: scale(0.7,0.7); /* Safari */
       transform: scale(0.7,0.7);
     }
+
+
+#signIn:hover {
+    border-color: red;
+    -webkit-transition-property: all;
+ transition-property: all;
+ -webkit-transition-duration: 0.7s;
+ transition-duration: 0.7s;
+ -webkit-transition-timing-function: ease-out;
+ transition-timing-function: ease-out;
+
+}
 
     #nav_bar {
       margin-right: 80px;
