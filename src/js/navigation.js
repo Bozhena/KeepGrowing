@@ -108,6 +108,7 @@ function search(e, id){
         e.preventDefault(); // Ensure it is only this code that rusn
         localStorage.search_request = document.getElementById(id).value;
         var res = searching(localStorage.search_request);
+		document.getElementById(id).value = "";
         window.location.href="searchResults.html";
      }
 }
