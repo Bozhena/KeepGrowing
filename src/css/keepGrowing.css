@@ -131,7 +131,7 @@ Header styles minus menu
   border: none;
   -webkit-transition: width 1s;
   transition: width 1s;
-  background-image: url('..//images/Search Tool with ....webp');
+  background-image: url('../images/search-with-dots.webp');
   background-repeat: no-repeat;
   opacity: 1;
   outline: none;

@@ -122,7 +122,7 @@ function changeIcon(id){
 }
 
 function useDefaultIcon(id){
-  document.getElementById(id).style.backgroundImage = "url('..//images/Search Tool with ....webp')";
+  document.getElementById(id).style.backgroundImage = "url('../images/search-with-dots.webp')";
   document.getElementById(id).value = "";
 }
 
