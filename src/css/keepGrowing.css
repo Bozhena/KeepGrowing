@@ -121,6 +121,7 @@ Header styles minus menu
 }
 
 #search {
+  border:0px;
   -ms-transform: scale(1,1); /* IE 9 */
   -webkit-transform: scale(1,1); /* Safari */
   transform: scale(1,1);
@@ -229,7 +230,6 @@ Header styles minus menu
   margin-right: 38px;
   font-size: 24px;
   margin-top: -2px;
-
  }
 
 #signIn {
@@ -247,6 +247,8 @@ Header styles minus menu
 
 .main-area {
   margin-top: -15px;
+  height:auto !important;
+  min-height: 40%;
 }
 
 .centured .cards {
@@ -385,9 +387,6 @@ figure:hover {
       -webkit-transform: scale(0.7,0.7); /* Safari */
       transform: scale(0.7,0.7);
       margin-right: -10px;
-      padding-bottom: 25px;
-      border-bottom: 3px transparent;
-
     }
 
     #about {
@@ -395,8 +394,6 @@ figure:hover {
       -webkit-transform: scale(0.7,0.7); /* Safari */
       transform: scale(0.7,0.7);
       margin-right: -20px;
-      border-bottom-width: 4px;
-      border-bottom-color: transparent;
     }
 
     #signIn {
@@ -406,39 +403,17 @@ figure:hover {
     }
 
 
-    #signIn:hover {
-      border-color: #D15475;
-      -webkit-transition-property: all;
-      transition-property: all;
-      -webkit-transition-duration: 0.7s;
-      transition-duration: 0.7s;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out;
-    }
+#signIn:hover {
+    border-color: red;
+    -webkit-transition-property: all;
+ transition-property: all;
+ -webkit-transition-duration: 0.7s;
+ transition-duration: 0.7s;
+ -webkit-transition-timing-function: ease-out;
+ transition-timing-function: ease-out;
 
-    #about:hover {
-      margin-bottom: 6px;
-      border-bottom-width: 4px;
-      border-bottom-color: #D15475;
-      -webkit-transition-property: all;
-      transition-property: all;
-      -webkit-transition-duration: 0.7s;
-      transition-duration: 0.7s;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out;
-    }
+}
 
-    #search:hover {
-      padding-bottom: 22px;
-      border-bottom: 4px solid #D15475;
-      -webkit-transition-property: all;
-      transition-property: all;
-      -webkit-transition-duration: 0.7s;
-      transition-duration: 0.7s;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out;
-    }
-    
     #nav_bar {
       margin-right: 80px;
     }
