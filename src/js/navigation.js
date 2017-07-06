@@ -108,7 +108,7 @@ function search(e, id){
         e.preventDefault(); // Ensure it is only this code that rusn
         localStorage.search_request = document.getElementById(id).value;
         var res = searching(localStorage.search_request);
-		document.getElementById(id).value = "";
+		    document.getElementById(id).value = "";
         window.location.href="searchResults.html";
      }
 }
@@ -162,9 +162,15 @@ function searching(search_request){
 function searchResult(){
   document.getElementById("search_result").value = localStorage.search_request;
   var i = 1;
+  if (JSON.parse(localStorage["result"]).length>0){
   JSON.parse(localStorage["result"]).forEach(function (item){
     document.getElementById("card_"+i).innerHTML = item;
     document.getElementById("card_"+i).parentNode.style.display="";
     i++;
-  });
+  });}
+  else {
+    document.getElementById("phrase").getElementsByTagName("h2")[0].innerHTML = "Sorry... Nothing seems to match";
+    document.getElementById("phrase").getElementsByTagName("h4")[0].innerHTML = "";
+  }
+
 }
