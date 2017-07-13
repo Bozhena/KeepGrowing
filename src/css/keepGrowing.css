@@ -246,7 +246,7 @@ Header styles minus menu
 .main-area {
   margin-top: -15px;
   height:auto !important;
-  min-height: 40%;
+  min-height: 28%;
 }
 
 .centured .cards {
@@ -438,7 +438,7 @@ figure:hover {
       -webkit-transition-timing-function: ease-out;
       transition-timing-function: ease-out;
     }
-    
+
     #nav_bar {
       margin-right: 80px;
     }
