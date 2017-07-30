@@ -3,6 +3,12 @@
   color:white;
 }
 
+.test {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+}
+
 .title {
   margin-top: 200px;
 }
