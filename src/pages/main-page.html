@@ -7,6 +7,7 @@
   <title>KeepGrowing</title>
   <link rel="stylesheet" type="text/css" href="../css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+  <script src="../js/categories.js"></script>
   <script src="../js/main.js"></script>
 </head>
 
@@ -17,7 +18,10 @@
     <div id="main-menu">
       <ul>
         <li class="menu-item">
-            <input type="search" id="search" class="collapsed" placeholder="What are you looking for?" onkeypress="search(event, this.id);" onfocus="expandSearchField(this.id);" onblur="collapseSearchField(this.id);"></input>
+          <input type="search" id="search" class="collapsed" placeholder="What are you looking for?"
+                 onkeypress="search(event, this);"
+                 onfocus="expandSearchField(this);"
+                 onblur="collapseSearchField(this);">
         </li>
         <li class="menu-item"><a href="#" id="about">About</a></li>
         <li class="menu-item"><a href="#" id="sign-in">Sign In</a></li>
@@ -25,6 +29,74 @@
     </div>
   </header>
 
+  <div style="clear: both;"></div>
+  <div style="height: 76px;"></div>
+  <h2>New day is a new challenge</h2>
+  <h4>Today you can make...</h4>
+  <div style="height: 100px;"></div>
+
+  <main class="main-area">
+    <div class="centured">
+      <section class="cards">
+        <article class="card">
+          <figure id="first_card" style="background-color:#919845;" onclick="getCardName(this.id); openCard();">
+            <img src="..//images/Card.webp" />
+            <p id="card_1"></p>
+          </figure>
+        </article>
+
+        <article class="card">
+          <figure id="second_card" style="background-color:#52535C;" onclick="getCardName(this.id); openCard();">
+            <img src="..//images/Card.webp" />
+            <p id="card_2"></p>
+          </figure>
+        </article>
+
+        <article class="card">
+          <figure id="third_card" style="background-color:#D0915A;" onclick="getCardName(this.id); openCard();">
+            <img src="..//images/Card.webp" />
+            <p id="card_3"></p>
+          </figure>
+        </article>
+
+        <article class="card">
+          <figure id="forth_card" style="background-color:#3E5E30;" onclick="getCardName(this.id); openCard();">
+            <img src="..//images/Card.webp" />
+            <p id="card_4"></p>
+          </figure>
+        </article>
+
+        <article class="card">
+          <figure id="fifth_card" style="background-color:#BBA231;" onclick="getCardName(this.id); openCard();">
+            <img src="..//images/Card.webp" />
+            <p id="card_5"></p>
+          </figure>
+        </article>
+
+        <article class="card">
+          <figure id="sixth_card" style="background-color:#57B5B4;" onclick="getCardName(this.id); openCard();">
+            <img src="..//images/Card.webp" />
+            <p id="card_6"></p>
+          </figure>
+        </article>
+
+        <article class="card">
+          <figure id="seventh_card" style="background-color:#58B05D;" onclick="getCardName(this.id); openCard();">
+            <img src="..//images/Card.webp" />
+            <p id="card_7"></p>
+          </figure>
+        </article>
+
+        <article class="card">
+          <figure id="eights_card" style="background-color:#D25475;" onclick="getCardName(this.id); openCard();">
+            <img src="..//images/Card.webp" />
+            <p id="card_8"></p>
+          </figure>
+        </article>
+
+      </section>
+    </div>
+  </main>
 
   <footer>
     <p id="rights">
