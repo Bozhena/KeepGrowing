@@ -1,3 +1,18 @@
+// Popup Open
+function popupOpen(){
+    document.getElementById("popup").style.display="block";
+    document.getElementById("overlay").style.display="block";
+	}
+// Popup Close
+	function popupClose(){
+    document.getElementById("popup").style.display="none";
+    document.getElementById("overlay").style.display="none";
+	}
+
+
+
+
+
 function init() {
     window.addEventListener('scroll', function(e){
 
@@ -99,6 +114,8 @@ function getCardName(id){
 }
 
 function onPageLoad() {
+  popupOpen();
+  popupClose();
   init();
   setTitles();
 }
