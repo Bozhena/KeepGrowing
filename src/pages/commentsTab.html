@@ -6,15 +6,14 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Noto+Serif" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <title>KeepGrowing</title>
-  <link rel="stylesheet" type="text/css" href="../css/card.css">
   <link rel="stylesheet" type="text/css" href="../css/keepGrowing.css">
+  <link rel="stylesheet" type="text/css" href="../css/card.css">
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
   <script src="../js/navigation.js"></script>
   <script src="../js/classie.js"></script>
+  <script src="../js/card.js"></script>
 </head>
-
-<body onload="onPageLoad();">
+<body onload="setTitle()">
 
   <header class="navigation_menu">
     <div id="logo">
@@ -30,50 +29,46 @@
     </div>
   </header>
 
-  <!-- Overlay -->
-  <div class="overlay" id="overlay" style="display:none;"></div>
-
-  <!-- Popup -->
-  <div class="popup" id="popup" style="display:none;">
-    <div class="popup-inner">
-      <div id="rectangle1"><p>SIGN IN</p></div>
-      <div id="rectangle2"><p>SIGN UP</p></div>
-      <input type="button" name="Close" class="s3-btn-close" onclick="popupClose();" value="&times;">
-      <form>
-        <input type="text" class="field"><br>
-        <input type="text" class="field"><br>
-        <p class="pass">Fogot your password<a href="">Click here</a></p>
-        <input type="submit" class="submit">
-      </form>
-    </div>
+  <div class="title">
+    <div class="category">Drawing</div>
+    <div class="age">7-9</div>
   </div>
 
-  <!-- Popup Button -->
-
-  <header class="masthead clear">
-    <div class="centered">
-      <div class="site-branding">
-        <h1 class="site-title"></h1>
-        <h2 class="title">Tree with leaves</h2>
-        <h4 class="category">Drawing</h4></br>
-        <h4 class="age">7-9</h4>
-      </div>
+  <div class="main">
+    <div id="generalCardInfo" >
+      <p id="title"></p>
+      <p id="category"></p>
+      <p id="age"></p>
     </div>
-  </header>
 
-
+    <p>
     <div class="card_body">
-      <div id="pentagon"></div>
       <img class="top" >
-      <img class ="left" >
-      <div class="card_desc"></div>
-    </div>
+      <a href="../pages/card.html">
+        <img src="..//images/Info_tab.webp"/>
+      </a>
 
+      <a href="../pages/itemCard.html">
+        <img src="..//images/Items_tab.webp"/>
+      </a>
+
+      <a href="../pages/resultTab.html">
+        <img src="..//images/Result_tab.webp"/>
+      </a>
+
+      <a href="../pages/commentsTab.html">
+        <img class="info_clicked" src="..//images/Comments_tab.webp"/>
+      </a>
+
+      <img class ="left" ><div class="card_desc"></div>
+    </div>
+  </p>
+</body>
 
 <footer>
   <p id="rights">
     &#9400; 2017 Keep Growing. All rights reserved
   </p>
 </footer>
-</body>
+
 </html>
