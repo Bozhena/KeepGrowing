@@ -365,7 +365,6 @@ figure:hover {
       margin-right: -10px;
       padding-bottom: 25px;
       border-bottom: 3px transparent;
-
     }
 
     #about {
@@ -509,6 +508,7 @@ footer {
   bottom:0px;
   left:0px;
   right:0px;
+  height: 1200px;
   z-index:10;
 }
 
@@ -522,27 +522,28 @@ footer {
   bottom:0;
   right:0;
   z-index:11;
-  width:500px; /*Change your width here*/
-  height:200px; /*Change your height here*/
+  width:774px; /*Change your width here*/
+  height:500px; /*Change your height here*/
   margin:auto;
+  margin-top: 190px;
 }
 
   /* Popup Inner */
   .popup-inner{
     position:relative;
     padding:1em;
-}
-  input.s3-btn-close{
+  }
+
+  img.close {
     position:absolute;
     top:-50px;
-    right:-0.5em;
-    background:black;
-    border:solid 2px white;
-    color:white;
+    right:-20px;
+    background-repeat: no-repeat;
     cursor:pointer;
-    border-radius:15px;
-    outline:none;
-  } // s3-btn-close
+    -ms-transform: scale(0.7,0.7); /* IE 9 */
+    -webkit-transform: scale(0.7,0.7); /* Safari */
+    transform: scale(0.7,0.7);
+  }
 
 
 
@@ -555,7 +556,6 @@ input.s3-btn{
   width:200px;
   height:50px;
   cursor:pointer;
-
   position:absolute;
   top:0;
   right:0;
@@ -569,8 +569,8 @@ input.s3-btn{
 }
 
 #rectangle1 {
-	width: 300px;
-	height: 50px;
+	width: 387px;
+	height: 80px;
 	background: #BCC187;
   border-top-left-radius: 17px;
   border-top-right-radius: 17px;
@@ -581,32 +581,82 @@ input.s3-btn{
 }
 
 #rectangle2 {
-	width: 300px;
-	height: 50px;
+	width: 400px;
+	height: 80px;
 	background: #636843;
   border-top-right-radius: 17px;
   margin-top: -40px;
-  margin-left: 184px;
+  margin-left: 358px;
   position: absolute;
   z-index: 1;
 }
 
 #rectangle1, #rectangle2  p {
   text-align: center;
+  padding-top:20px;
+  font-size: 30px;
+  color: #4A4A4A;
+  font-family: "Noto Serif";
+  font-weight: normal;
 }
 
-.field {
-  width: 250px;
-  height: 20px;
-  margin-top: 20px;
-  margin-left: 100px;
+.field1 {
+  width: 620px;
+  height: 70px;
+  margin-top: 150px;
+  margin-left: 60px;
+  border-radius: 17px;
+  background-color: #D7E3CF;
+  border: none;
+  box-shadow: 0 0 5px #969090;
 }
+
+.field2 {
+  width: 620px;
+  height: 70px;
+  margin-top: 20px;
+  margin-left: 60px;
+  border-radius: 17px;
+  background-color: #D7E3CF;
+  border: none;
+  box-shadow: 0 0 5px #969090;
+}
+
 
 .pass {
-  font-size: 14px;
-  margin-left: 100px
+  font-size: 18px;
+  margin-left: 60px;
+  margin-top: 10px;
+  color: #4E5965;
+  font-family: "Noto Serif";
+  font-style: normal;
+}
+
+.pass1 {
+  font-size: 18px;
+  margin-left: 5px;
+  margin-top: 10px;
+  color: #D15475;
+  font-family: "Noto Serif";
+  font-style: normal;
 }
 
 .submit {
   float: right;
+  font-style: normal;
+  margin-right: 60px;
+  margin-top: 70px;
+  font-color: #4E5965;
+  font-family: "Noto Serif";
+  border-radius: 17px;
+  border-width: 4px;
+  border-color: #63BA34;
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: -5px;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-style: solid;
 }

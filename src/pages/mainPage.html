@@ -30,8 +30,7 @@
             <input type="search" class="ui-btn" id="search" placeholder="What are you looking for?" oninput="changeIcon(this.id);" onkeypress="search(event, this.id);" onfocus="useDefault(this.id);" onblur="useDefaultIcon(this.id);"></input>
         </li>
         <li class="nav_bar"><a href="#" class="ui-btn" id="about">About</a></li>
-		<li class="nav_bar"><a href="#" class="ui-btn", "s3-btn" id="signIn" onclick="popupOpen();">Sign In</a>
-        </li>
+		<li class="nav_bar"><a href="#" class="ui-btn", "s3-btn" id="signIn" onclick="popupOpen();">Sign In</a></li>
       </ul>
     </div>
   </header>
@@ -49,8 +48,9 @@
 		<div id="error"></div>
         <input type="text" class="field" name="user_name" id="user_name"><br>
         <input type="password" class="field" name="password" id="password"><br>
-        <p class="pass">Fogot your password<a href="">Click here</a></p>
-        <input type="submit" class="submit" id="btn-submit">
+     <p class="pass">Forgot your password<a class="pass1" href="">Click here</a></p>
+        <div class="submit">OK</div>
+
       </form>
     </div>
   </div>
