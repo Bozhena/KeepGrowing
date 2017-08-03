@@ -363,7 +363,7 @@ Header styles minus menu
 
     .tabs {
       float: right;
-margin-top: -40px;
+      margin-top: -40px;
     }
 
     #pentagon {
@@ -546,7 +546,7 @@ input.s3-btn{
 .field {
   width: 250px;
   height: 20px;
-  margin-top: 20px;
+  margin-top: 90px;
   margin-left: 100px;
 }
 
