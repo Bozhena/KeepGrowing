@@ -209,7 +209,7 @@ Header styles minus menu
   margin-top: -2px;
  }
 
-#signIn {
+#signIn, #add_card {
   color:#4E5965;
   font-family: "Noto Serif";
   border-radius: 17px;
@@ -377,14 +377,14 @@ figure:hover {
       border-bottom-color: transparent;
     }
 
-    #signIn {
+    #signIn, #add_card {
       -ms-transform: scale(0.7,0.7); /* IE 9 */
       -webkit-transform: scale(0.7,0.7); /* Safari */
       transform: scale(0.7,0.7);
     }
 
 
-    #signIn:hover {
+    #signIn:hover, #add_card:hover {
       border-color: #D15475;
       -webkit-transition-property: all;
       transition-property: all;
