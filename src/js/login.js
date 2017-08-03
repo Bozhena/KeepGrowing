@@ -53,7 +53,6 @@ $('document').ready(function()
 					setTimeout('$(".popup").fadeOut(500, function(){ $("#signIn").html("Add Card"); $("#signIn").attr({"id":"add_card", "onclick":"createCard()"}); $("#overlay").css("display", "none")});');
                 }
                 else{
-
                     $("#error").fadeIn(1000, function(){
                         $("#error").html('<br>'+data);
                     });
