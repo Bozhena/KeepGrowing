@@ -522,10 +522,10 @@ footer {
   bottom:0;
   right:0;
   z-index:11;
-  width:774px; /*Change your width here*/
-  height:500px; /*Change your height here*/
+  width:500px; /*Change your width here*/
+  height:380px; /*Change your height here*/
   margin:auto;
-  margin-top: 190px;
+  margin-top: 170px;
 }
 
   /* Popup Inner */
@@ -568,10 +568,9 @@ input.s3-btn{
   text-align:center;
 }
 
-#rectangle1 {
-	width: 387px;
-	height: 80px;
-	background: #BCC187;
+#tab-1 {
+	width: 262px;
+	height: 40px;
   border-top-left-radius: 17px;
   border-top-right-radius: 17px;
   margin-top: -40px;
@@ -580,52 +579,118 @@ input.s3-btn{
   z-index: 2;
 }
 
-#rectangle2 {
-	width: 400px;
-	height: 80px;
-	background: #636843;
+#tab-2 {
+	width: 262px;
+	height: 54px;
   border-top-right-radius: 17px;
   margin-top: -40px;
-  margin-left: 358px;
+  margin-left: 222px;
   position: absolute;
   z-index: 1;
 }
 
-#rectangle1, #rectangle2  p {
+.popup-inner .active {
+  background-color: #BCC187;
+}
+
+.popup-inner .inactive {
+  background-color: #636843;
+}
+
+#tab-1, #tab-2  p {
   text-align: center;
-  padding-top:20px;
-  font-size: 30px;
+  padding-top:15px;
+  font-size: 24px;
   color: #4A4A4A;
   font-family: "Noto Serif";
   font-weight: normal;
 }
 
 .field1 {
-  width: 620px;
-  height: 70px;
-  margin-top: 150px;
-  margin-left: 60px;
+  width: 235px;
+  height: 50px;
+  margin-top: 90px;
+  margin-left: 40px;
   border-radius: 17px;
   background-color: #D7E3CF;
+  color: #61716D;
+  padding-left: 150px;
   border: none;
   box-shadow: 0 0 5px #969090;
+  font-size: 16px;
+  font-family: "Noto Serif";
+}
+
+
+.field1-2 {
+  width: 235px;
+  height: 45px;
+  margin-top: 90px;
+  margin-left: 40px;
+  border-radius: 17px;
+  background-color: #D7E3CF;
+  color: #61716D;
+  padding-left: 150px;
+  border: none;
+  box-shadow: 0 0 5px #969090;
+  font-size: 16px;
+  font-family: "Noto Serif";
+}
+
+.field1:focus, .field2:focus, .field1-2:focus, .field2-2:focus, .field3:focus {
+    outline: none;
+    border: 2px solid #D15475;
+    text-indent: 0px;
 }
 
 .field2 {
-  width: 620px;
-  height: 70px;
-  margin-top: 20px;
-  margin-left: 60px;
+  width: 245px;
+  height: 50px;
+  margin-top: 15px;
+  margin-left: 40px;
   border-radius: 17px;
   background-color: #D7E3CF;
+  color: #61716D;
+  padding-left: 140px;
   border: none;
   box-shadow: 0 0 5px #969090;
+  font-size: 16px;
+  font-family: "Noto Serif"
 }
 
+.field2-2 {
+  width: 245px;
+  height: 45px;
+  margin-top: 10px;
+  margin-left: 40px;
+  border-radius: 17px;
+  background-color: #D7E3CF;
+  color: #61716D;
+  padding-left: 140px;
+  border: none;
+  box-shadow: 0 0 5px #969090;
+  font-size: 16px;
+  font-family: "Noto Serif"
+}
+
+.field3 {
+  width: 229px;
+  height: 45px;
+  margin-top: 10px;
+  margin-left: 40px;
+  border-radius: 17px;
+  background-color: #D7E3CF;
+  color: #61716D;
+  padding-left: 154px;
+  border: none;
+  box-shadow: 0 0 5px #969090;
+  font-size: 16px;
+  font-family: "Noto Serif"
+}
 
 .pass {
-  font-size: 18px;
-  margin-left: 60px;
+  font-size: 14px;
+  margin-left: 40px;
   margin-top: 10px;
   color: #4E5965;
   font-family: "Noto Serif";
@@ -633,8 +698,8 @@ input.s3-btn{
 }
 
 .pass1 {
-  font-size: 18px;
-  margin-left: 5px;
+  font-size: 14px;
+  margin-left: 3px;
   margin-top: 10px;
   color: #D15475;
   font-family: "Noto Serif";
@@ -643,20 +708,46 @@ input.s3-btn{
 
 .submit {
   float: right;
-  font-style: normal;
-  margin-right: 60px;
-  margin-top: 70px;
+  margin-right: 40px;
+  margin-top: 25px;
   font-color: #4E5965;
   font-family: "Noto Serif";
   border-radius: 17px;
   border-width: 4px;
   border-color: #63BA34;
   font-weight: bold;
-  font-size: 24px;
-  margin-top: -5px;
+  font-size: 20px;
   padding-left: 36px;
   padding-right: 36px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-style: solid;
+}
+
+.submit-2 {
+  float: right;
+  margin-right: 40px;
+  margin-top: 25px;
+  font-color: #4E5965;
+  font-family: "Noto Serif";
+  border-radius: 17px;
+  border-width: 4px;
+  border-color: #63BA34;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-style: solid;
+}
+
+.submit:hover, .submit-2:hover {
+  border-color: #D15475;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }

@@ -41,6 +41,7 @@
   <!-- Popup -->
   <div class="popup" id="popup" style="display:none;">
     <div class="popup-inner">
+<<<<<<< Updated upstream
       <div id="rectangle1"><p>SIGN IN</p></div>
       <div id="rectangle2"><p>SIGN UP</p></div>
       <img class="close" src="../images/Cancel_for_pop.webp" onclick="popupClose();" value="&times;"/>
@@ -50,7 +51,26 @@
         <input type="password" class="field2" name="password" id="password"><br>
 		<p class="pass">Forgot your password<a class="pass1" href="">Click here</a></p>
 		<input type="submit" class="submit" id="btn-submit" value="OK">
+=======
+      <div id="tab-1" onclick="tabActive('sign-in')" class="active"><p>SIGN IN</p></div>
+      <div id="tab-2" onclick="tabActive('sign-up')" class="inactive"><p>SIGN UP</p></div>
+      <form id="log-in">
+        <input type="text" value="Your name" class="field1" onfocus="if (this.value=='Your name') this.value='';" onblur="this.value = this.value==''?'Your name':this.value;"/>
+        <br>
+        <input type="text" value="Your password" class="field2" onfocus="if (this.value=='Your password') this.value='';" onblur="this.value = this.value==''?'Your password':this.value;"/><br>
+        <p class="pass">Forgot your password<a class="pass1" href="">Click here</a></p>
+        <div class="submit">OK</div>
+>>>>>>> Stashed changes
       </form>
+
+      <form id="log-up" style="display: none;">
+        <input type="text" value="Your name" class="field1-2" onfocus="if (this.value=='Your name') this.value='';" onblur="this.value = this.value==''?'Your name':this.value;"/>
+        <br>
+        <input type="text" value="Your password" class="field2-2" onfocus="if (this.value=='Your password') this.value='';" onblur="this.value = this.value==''?'Your password':this.value;"/><br>
+        <input type="text" value="Your e-mail" class="field3" onfocus="if (this.value=='Your e-mail') this.value='';" onblur="this.value = this.value==''?'Your e-mail':this.value;"/><br>
+        <div class="submit-2">OK</div>
+      </form>
+      <img class="close" src="../images/Cancel_for_pop.webp" onclick="popupClose();" value="&times;"/>
     </div>
   </div>
   <script src="../js/jquery/bootstrap.min.js"></script>

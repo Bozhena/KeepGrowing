@@ -9,6 +9,19 @@ function popupOpen(){
     document.getElementById("overlay").style.display="none";
 	}
 
+function tabActive(tabName){
+  if (tabName === 'sign-in') {
+    document.getElementById ("log-up").style.display = "none";
+    document.getElementById ("log-in").style.display = "block";
+    document.getElementById ("tab-1").className = 'active';
+    document.getElementById ("tab-2").className = 'inactive';
+  } else {
+    document.getElementById ("log-up").style.display = "block";
+    document.getElementById ("log-in").style.display = "none";
+    document.getElementById ("tab-1").className = 'inactive';
+    document.getElementById ("tab-2").className = 'active';
+  }
+}
 
 
 
