@@ -1,35 +1,29 @@
 <?php
 
-  include 'database.php';
-  $db = OpenCon();
+require_once 'dbconfig.php';
 
- session_start();
+if($_POST)
+{
+   $user_name 		= $_POST['user_name'];
+   $user_password 	= $_POST['password'];
+	
+    try
+    {
+        $stmt = $db_con->prepare("SELECT * FROM users WHERE username=:uname AND password=:pass");
+        $stmt->execute(array(":uname"=>$user_name, ":pass"=>$user_password));
+        $count = $stmt->rowCount();
+		
+        if($count==1){         
+            echo "exist";
+        }
+        else{
+            echo "1"; //  not available
+        }
 
-  if($_SERVER["REQUEST_METHOD"] == "POST") {
-      $_SESSION['Error'] = "You left one or more of the required fields.";
-    // username and password sent from form
+    }
+    catch(PDOException $e){
+        echo $e->getMessage();
+    }
+}
 
-    $myusername = mysqli_real_escape_string($db,$_POST['usrname']);
-    $mypassword = mysqli_real_escape_string($db,$_POST['pass']);
-
-    $sql = "SELECT * FROM users WHERE username = '$myusername' and password = '$mypassword'";
-    $result = mysqli_query($db,$sql);
-    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-    //$active = $row['active'];
-
-    $count = mysqli_num_rows($result);
-
-    // If result matched $myusername and $mypassword, table row must be 1 row
-
-    if($count == 1) {
-      $_SESSION['login_user']= $myusername;
-       //session_register("myusername");
-       //   $_SESSION['login_user'] = $myusername;
-       echo "<script>document.location='../pages/mainPage.php'</script>";
-    //  header("location: ../index.php");
-    }else {
-		echo "<script>alert('Invalid username or password');document.location='../pages/mainPage.php'</script>";
-	}
-  }
-;
 ?>
