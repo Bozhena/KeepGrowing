@@ -21,6 +21,7 @@ session_start();
   <script src="../js/jquery/jquery.min.js"></script>
   <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
   <script type="text/javascript" src="../js/login.js"></script>
+  <script type="text/javascript" src="../js/register.js"></script>
 
 </head>
 
@@ -67,12 +68,13 @@ session_start();
         <input type="submit" class="submit" id="btn-submit" value="OK">
       </form>
 
-      <form id="log-up" style="display: none;">
-        <input type="text" value="Your name" class="field1-2" onfocus="if (this.value=='Your name') this.value='';" onblur="this.value = this.value==''?'Your name':this.value;"/>
+      <form id="log-up" method="post" style="display: none;">
+        <div id="error"></div>
+        <input type="text" value="Your name" class="field1-2" name="user_name" onfocus="if (this.value=='Your name') this.value='';" onblur="this.value = this.value==''?'Your name':this.value;"/>
         <br>
-        <input type="text" value="Your password" class="field2-2" onfocus="if (this.value=='Your password') this.value='';" onblur="this.value = this.value==''?'Your password':this.value;"/><br>
-        <input type="text" value="Your e-mail" class="field3" onfocus="if (this.value=='Your e-mail') this.value='';" onblur="this.value = this.value==''?'Your e-mail':this.value;"/><br>
-        <div class="submit-2">OK</div>
+        <input type="password" value="Your password" class="field2-2" name="password" onfocus="if (this.value=='Your password') this.value='';" onblur="this.value = this.value==''?'Your password':this.value;"/><br>
+        <input type="text" value="Your e-mail" class="field3"  name="user_email" onfocus="if (this.value=='Your e-mail') this.value='';" onblur="this.value = this.value==''?'Your e-mail':this.value;"/><br>
+        <input type="submit" class="submit-2" id="btn-submit" value="OK">
       </form>
       <img class="close" src="../images/Cancel_for_pop.webp" onclick="popupClose();" value="&times;"/>
     </div>
