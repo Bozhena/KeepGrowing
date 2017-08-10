@@ -37,7 +37,7 @@ $('document').ready(function()
             data : data,
             beforeSend: function()
             {
-                $("#error").fadeOut(); 
+                $("#error").fadeOut();
             },
             success :  function(data)
             {
@@ -50,7 +50,7 @@ $('document').ready(function()
                 }
                 else if(data=="exist")
                 {
-					setTimeout('$(".popup").fadeOut(500, function(){ $("#signIn").html("Add Card"); $("#signIn").attr({"id":"add_card", "onclick":"createCard()"}); $("#overlay").css("display", "none")});');
+					          setTimeout('$(".popup").fadeOut(500, function(){ $("#signIn").html("Add Card"); $("#signIn").attr({"id":"add_card", "onclick":"createCard()"}); $("#overlay").css("display", "none")});');
                 }
                 else{
                     $("#error").fadeIn(1000, function(){

@@ -1,3 +1,8 @@
+<?php
+// Start the session
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -30,7 +35,16 @@
             <input type="search" class="ui-btn" id="search" placeholder="What are you looking for?" oninput="changeIcon(this.id);" onkeypress="search(event, this.id);" onfocus="useDefault(this.id);" onblur="useDefaultIcon(this.id);"></input>
         </li>
         <li class="nav_bar"><a href="#" class="ui-btn" id="about">About</a></li>
-		<li class="nav_bar"><a href="#" class="ui-btn", "s3-btn" id="signIn" onclick="popupOpen();">Sign In</a></li>
+		<li class="nav_bar">
+      <?php
+      if (isset($_SESSION['login_status']) && $_SESSION['login_status'] == true) {
+          echo '<a href="#" class="ui-btn", "s3-btn" id="add_card" onclick="createCard();">Add Card</a>';
+      }
+      else {
+        echo '<a href="#" class="ui-btn", "s3-btn" id="signIn" onclick="popupOpen();">Sign In</a>';
+      }
+      ?>
+    </li>
       </ul>
     </div>
   </header>
@@ -45,10 +59,10 @@
       <div id="tab-2" onclick="tabActive('sign-up')" class="inactive"><p>SIGN UP</p></div>
       <div id="error"></div>
       <form id="log-in" class="form-login" method="post">
-		<div id="error"></div>
+		    <div id="error"></div>
         <input type="text" value="Your name" class="field1" name="user_name" id="user_name" onfocus="if (this.value=='Your name') this.value='';" onblur="this.value = this.value==''?'Your name':this.value;"/>
         <br>
-        <input type="text" value="Your password" class="field2" name="password" id="password" onfocus="if (this.value=='Your password') this.value='';" onblur="this.value = this.value==''?'Your password':this.value;"/><br>
+        <input type="password" value="Your password" class="field2" name="password" id="password" onfocus="if (this.value=='Your password') this.value='';" onblur="this.value = this.value==''?'Your password':this.value;"/><br>
         <p class="pass">Forgot your password<a class="pass1" href="">Click here</a></p>
         <input type="submit" class="submit" id="btn-submit" value="OK">
       </form>

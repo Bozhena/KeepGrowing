@@ -1,3 +1,8 @@
+<?php
+// Start the session
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -25,7 +30,15 @@
             <input type="search" class="ui-btn" id="search" placeholder="What are you looking for?" oninput="changeIcon(this.id);" onkeypress="search(event, this.id);" onfocus="useDefault(this.id);" onblur="useDefaultIcon(this.id);"></input>
         </li>
         <li class="nav_bar"><a href="#" class="ui-btn" id="about">About</a></li>
-        <li class="nav_bar"><a href="#" class="ui-btn" id="signIn">Sign In</a></li>
+        <li class="nav_bar"><?php
+        if (isset($_SESSION['login_status']) && $_SESSION['login_status'] == true) {
+            echo '<a href="#" class="ui-btn", "s3-btn" id="add_card" onclick="createCard();">Add Card</a>';
+        }
+        else {
+          echo '<a href="#" class="ui-btn", "s3-btn" id="signIn" onclick="popupOpen();">Sign In</a>';
+        }
+        ?>
+      </li>
       </ul>
     </div>
   </header>
