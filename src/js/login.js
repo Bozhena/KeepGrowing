@@ -1,7 +1,7 @@
 $('document').ready(function()
 {
     /* validation */
-    $("#login-form").validate({
+    $("#log-in").validate({
         rules:
         {
             user_name: {
@@ -29,7 +29,7 @@ $('document').ready(function()
     /* form submit */
     function submitForm()
     {
-        var data = $("#login-form").serialize();
+        var data = $("#log-in").serialize();
 
         $.ajax({
             type : 'POST',

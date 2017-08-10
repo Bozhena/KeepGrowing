@@ -44,10 +44,11 @@
       <div id="tab-1" onclick="tabActive('sign-in')" class="active"><p>SIGN IN</p></div>
       <div id="tab-2" onclick="tabActive('sign-up')" class="inactive"><p>SIGN UP</p></div>
       <div id="error"></div>
-      <form id="log-in">
-        <input type="text" value="Your name" class="field1" onfocus="if (this.value=='Your name') this.value='';" onblur="this.value = this.value==''?'Your name':this.value;"/>
+      <form id="log-in" class="form-login" method="post">
+		<div id="error"></div>
+        <input type="text" value="Your name" class="field1" name="user_name" id="user_name" onfocus="if (this.value=='Your name') this.value='';" onblur="this.value = this.value==''?'Your name':this.value;"/>
         <br>
-        <input type="text" value="Your password" class="field2" onfocus="if (this.value=='Your password') this.value='';" onblur="this.value = this.value==''?'Your password':this.value;"/><br>
+        <input type="text" value="Your password" class="field2" name="password" id="password" onfocus="if (this.value=='Your password') this.value='';" onblur="this.value = this.value==''?'Your password':this.value;"/><br>
         <p class="pass">Forgot your password<a class="pass1" href="">Click here</a></p>
         <input type="submit" class="submit" id="btn-submit" value="OK">
       </form>
