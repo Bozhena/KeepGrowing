@@ -45,7 +45,7 @@ function init() {
 }
 
 function openCard(){
-   window.location.href="card.html";
+   window.location.href="card.php";
 }
 
 var category_1 = [
