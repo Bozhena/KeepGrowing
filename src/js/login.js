@@ -30,7 +30,6 @@ $('document').ready(function()
     function submitForm()
     {
         var data = $("#log-in").serialize();
-
         $.ajax({
             type : 'POST',
             url  : '../php/login.php',
@@ -42,7 +41,6 @@ $('document').ready(function()
             success :  function(data)
             {
                 if(data==1){
-
                     $("#error").fadeIn(1000, function(){
                         $("#error").html('<br> Invalid user name or password');
                     });
@@ -63,4 +61,39 @@ $('document').ready(function()
     }
     /* form submit	*/
 
+    $("#contact").click(function() {
+      username = $("#user_name").val();
+      var data = { 'username':username};
+
+        $.ajax({
+            type: "POST",
+            url: "../php/email.php",
+            data: data,
+            success: function(response){
+              if(response.includes("empty_name")){
+                  $("#error").fadeIn(1000, function(){
+                      $("#error").html('<br> Please enter your user name');
+                  });
+
+              }
+              else if (response.includes("wrong_email")){
+                $("#error").fadeIn(1000, function(){
+                    $("#error").html('<br> User was not found. Please check the name and try again');
+                });
+              }
+              else if(response.includes("send"))
+              {
+                $("#error").fadeIn(1000, function(){
+                    $("#error").html('<br> E-mail was send successfully!');
+                });
+              }
+              else{
+                  $("#error").fadeIn(1000, function(){
+                      $("#error").html('<br>'+response);
+                  });
+              }
+            }
+        });
+        return false;
+    });
 });
