@@ -685,7 +685,7 @@ input.s3-btn{
   border: none;
   box-shadow: 0 0 5px #969090;
   font-size: 16px;
-  font-family: "Noto Serif";
+  font-family: "Noto Serif"
 }
 
 .pass {
@@ -751,6 +751,7 @@ input.s3-btn{
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
 
 #error {
   display: none;

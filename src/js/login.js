@@ -30,6 +30,7 @@ $('document').ready(function()
     function submitForm()
     {
         var data = $("#log-in").serialize();
+
         $.ajax({
             type : 'POST',
             url  : '../php/login.php',
@@ -41,8 +42,9 @@ $('document').ready(function()
             success :  function(data)
             {
                 if(data==1){
+
                     $("#error").fadeIn(1000, function(){
-                        $("#error").css("display", "block")}).html('Invalid user name or password');
+                        $("#error").html('<br> Invalid user name or password');
                     });
 
                 }
@@ -52,7 +54,7 @@ $('document').ready(function()
                 }
                 else{
                     $("#error").fadeIn(1000, function(){
-                        $("#error").css("display", "block")}).html(data);
+                        $("#error").html('<br>'+data);
                     });
                 }
             }
@@ -61,7 +63,7 @@ $('document').ready(function()
     }
     /* form submit	*/
 
-    $("#contact").click(function() {
+	  $("#contact").click(function() {
       username = $("#user_name").val();
       var data = { 'username':username};
 
@@ -72,24 +74,24 @@ $('document').ready(function()
             success: function(response){
               if(response.includes("empty_name")){
                   $("#error").fadeIn(1000, function(){
-                      $("#error").css("display", "block")}).html('Please enter your user name');
+                      $("#error").css("display", "block").html('Please enter your user name');
                   });
 
               }
               else if (response.includes("wrong_email")){
                 $("#error").fadeIn(1000, function(){
-                    $("#error").css("display", "block")}).html('User was not found. Please check the name and try again');
+                    $("#error").css("display", "block").html('User was not found. Please check the name and try again');
                 });
               }
               else if(response.includes("send"))
               {
                 $("#error").fadeIn(1000, function(){
-                    $("#error").css("display", "block")}).html('E-mail was send successfully!');
+                    $("#error").css("display", "block").html('E-mail was send successfully!');
                 });
               }
               else{
                   $("#error").fadeIn(1000, function(){
-                      $("#error").css("display", "block")}).html(response);
+                      $("#error").css("display", "block").html(response);
                   });
               }
             }
