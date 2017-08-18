@@ -762,7 +762,7 @@ input.s3-btn{
   font-weight: bold;
 }
 
-#user_name-error, #password-error {
+#user_name-error, #password-error, #user_email-error {
   color: #61716D;
   font-size: 12px;
   font-family: "Noto Serif";
