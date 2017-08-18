@@ -751,3 +751,13 @@ input.s3-btn{
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
+#error {
+  display: none;
+  color: #61716D;
+  font-size: 16px;
+  font-family: "Noto Serif";
+  padding: 25px;
+  margin-bottom: -75px;
+  font-weight: bold;
+}

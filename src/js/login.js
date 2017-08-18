@@ -42,7 +42,7 @@ $('document').ready(function()
             {
                 if(data==1){
                     $("#error").fadeIn(1000, function(){
-                        $("#error").html('<br> Invalid user name or password');
+                        $("#error").css("display", "block")}).html('Invalid user name or password');
                     });
 
                 }
@@ -52,7 +52,7 @@ $('document').ready(function()
                 }
                 else{
                     $("#error").fadeIn(1000, function(){
-                        $("#error").html('<br>'+data);
+                        $("#error").css("display", "block")}).html(data);
                     });
                 }
             }
@@ -72,24 +72,24 @@ $('document').ready(function()
             success: function(response){
               if(response.includes("empty_name")){
                   $("#error").fadeIn(1000, function(){
-                      $("#error").html('<br> Please enter your user name');
+                      $("#error").css("display", "block")}).html('Please enter your user name');
                   });
 
               }
               else if (response.includes("wrong_email")){
                 $("#error").fadeIn(1000, function(){
-                    $("#error").html('<br> User was not found. Please check the name and try again');
+                    $("#error").css("display", "block")}).html('User was not found. Please check the name and try again');
                 });
               }
               else if(response.includes("send"))
               {
                 $("#error").fadeIn(1000, function(){
-                    $("#error").html('<br> E-mail was send successfully!');
+                    $("#error").css("display", "block")}).html('E-mail was send successfully!');
                 });
               }
               else{
                   $("#error").fadeIn(1000, function(){
-                      $("#error").html('<br>'+response);
+                      $("#error").css("display", "block")}).html(response);
                   });
               }
             }
