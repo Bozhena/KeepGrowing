@@ -685,7 +685,7 @@ input.s3-btn{
   border: none;
   box-shadow: 0 0 5px #969090;
   font-size: 16px;
-  font-family: "Noto Serif"
+  font-family: "Noto Serif";
 }
 
 .pass {
@@ -760,4 +760,15 @@ input.s3-btn{
   padding: 25px;
   margin-bottom: -75px;
   font-weight: bold;
+}
+
+#user_name-error, #password-error {
+  color: #61716D;
+  font-size: 12px;
+  font-family: "Noto Serif";
+  font-weight: bold;
+  float:left;
+  margin-left: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }

@@ -64,7 +64,6 @@ session_start();
         <input type="text" value="Your name" class="field1" name="user_name" id="user_name" onfocus="if (this.value=='Your name') this.value='';" onblur="this.value = this.value==''?'Your name':this.value;"/>
         <br>
         <input type="password" value="Your password" class="field2" name="password" onfocus="if (this.value=='Your password') this.value='';" onblur="this.value = this.value==''?'Your password':this.value;"/><br>
-
         <p class="pass">Forgot your password<a class="pass1" href="" id="contact">Click here</a></p>
         <input type="submit" class="submit" id="btn-submit" value="OK">
       </form>
