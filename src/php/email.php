@@ -42,7 +42,7 @@ if (isset($user_name)&&$user_name!="Your name"){
     $mail->isHTML(true);
 
     $mail->Subject = "New Test Keep Growing";
-    $mail->Body = "Here is your password - ".$password;
+    $mail->Body = "Dear " .$user_name ."\r\nHere is your password - ".$password;
     $mail->AltBody = "Here is your password - ".$password;
 
     if(!$mail->send()){

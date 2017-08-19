@@ -44,7 +44,8 @@ $('document').ready(function()
                 if(data==1){
 
                     $("#error").fadeIn(1000, function(){
-                        $("#error").html('<br> Invalid user name or password');
+                        $("#error").html('Invalid user name or password');
+                        $("#error").fadeOut(10000);
                     });
 
                 }
@@ -54,7 +55,8 @@ $('document').ready(function()
                 }
                 else{
                     $("#error").fadeIn(1000, function(){
-                        $("#error").html('<br>'+data);
+                        $("#error").html(data);
+                        $("#error").fadeOut(10000);
                     });
                 }
             }
@@ -73,25 +75,30 @@ $('document').ready(function()
             data: data,
             success: function(response){
               if(response.includes("empty_name")){
-                  $("#error").fadeIn(1000, function(){
+                  $("#error").fadeIn("fast", function(){
                       $("#error").css("display", "block").html('Please enter your user name');
                   });
-
+                  $("#error").fadeOut(10000, function(){
+                      $("#error").css("display", "none");
+                  });
               }
               else if (response.includes("wrong_email")){
                 $("#error").fadeIn(1000, function(){
                     $("#error").css("display", "block").html('User was not found. Please check the name and try again');
                 });
+                $("#error").fadeOut(10000);
               }
               else if(response.includes("send"))
               {
                 $("#error").fadeIn(1000, function(){
                     $("#error").css("display", "block").html('E-mail was send successfully!');
                 });
+                $("#error").fadeOut(10000);
               }
               else{
                   $("#error").fadeIn(1000, function(){
                       $("#error").css("display", "block").html(response);
+                      $("#error").fadeOut(10000);
                   });
               }
             }
