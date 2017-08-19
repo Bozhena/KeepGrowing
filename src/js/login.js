@@ -37,17 +37,17 @@ $('document').ready(function()
             data : data,
             beforeSend: function()
             {
-                $("#error").fadeOut();
+                $("#error_login").fadeOut();
             },
             success :  function(data)
             {
                 if(data==1){
 
-                    $("#error").fadeIn(1000, function(){
-                        $("#error").html('Invalid user name or password');
+                    $("#error_login").fadeIn(1000, function(){
+                        $("#error_login").html('Invalid user name or password');
                     });
-                    $("#error").fadeOut(5000, function(){
-                      $("#error").html('');
+                    $("#error_login").fadeOut(5000, function(){
+                      $("#error_login").html('');
                     });
                 }
                 else if(data=="exist")
@@ -55,11 +55,11 @@ $('document').ready(function()
 					          setTimeout('$(".popup").fadeOut(500, function(){ $("#signIn").html("Add Card"); $("#signIn").attr({"id":"add_card", "onclick":"createCard()"}); $("#overlay").css("display", "none")});');
                 }
                 else{
-                    $("#error").fadeIn(1000, function(){
-                        $("#error").html(data);
+                    $("#error_login").fadeIn(1000, function(){
+                        $("#error_login").html(data);
                     });
-                    $("#error").fadeOut(5000, function(){
-                      $("#error").html('');
+                    $("#error_login").fadeOut(5000, function(){
+                      $("#error_login").html('');
                     });
                 }
             }
@@ -78,36 +78,36 @@ $('document').ready(function()
             data: data,
             success: function(response){
               if(response.includes("empty_name")){
-                  $("#error").fadeIn(1000, function(){
-                      $("#error").css("display", "block").html('Please enter your user name');
+                  $("#error_login").fadeIn(1000, function(){
+                      $("#error_login").css("display", "block").html('Please enter your user name');
                   });
-                  $("#error").fadeOut(5000, function(){
-                    $("#error").html('');
+                  $("#error_login").fadeOut(5000, function(){
+                    $("#error_login").html('');
                   });
               }
               else if (response.includes("wrong_email")){
-                $("#error").fadeIn(1000, function(){
-                    $("#error").css("display", "block").html('User was not found. Please check the name and try again');
+                $("#error_login").fadeIn(1000, function(){
+                    $("#error_login").css("display", "block").html('User was not found. Please check the name and try again');
                 });
-                $("#error").fadeOut(5000, function(){
-                  $("#error").html('');
+                $("#error_login").fadeOut(5000, function(){
+                  $("#error_login").html('');
                 });
               }
               else if(response.includes("send"))
               {
-                $("#error").fadeIn(1000, function(){
-                    $("#error").css("display", "block").html('E-mail was send successfully!');
+                $("#error_login").fadeIn(1000, function(){
+                    $("#error_login").css("display", "block").html('E-mail was send successfully!');
                 });
-                $("#error").fadeOut(5000, function(){
-                  $("#error").html('');
+                $("#error_login").fadeOut(5000, function(){
+                  $("#error_login").html('');
                 });
               }
               else{
-                  $("#error").fadeIn(1000, function(){
-                      $("#error").css("display", "block").html(response);
+                  $("#error_login").fadeIn(1000, function(){
+                      $("#error_login").css("display", "block").html(response);
                   });
-                  $("#error").fadeOut(5000, function(){
-                    $("#error").html('');
+                  $("#error_login").fadeOut(5000, function(){
+                    $("#error_login").html('');
                   });
               }
             }

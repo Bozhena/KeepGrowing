@@ -58,9 +58,9 @@ session_start();
     <div class="popup-inner">
       <div id="tab-1" onclick="tabActive('sign-in')" class="active"><p>SIGN IN</p></div>
       <div id="tab-2" onclick="tabActive('sign-up')" class="inactive"><p>SIGN UP</p></div>
-      
+
       <form id="log-in" class="form-login" method="post">
-		    <div id="error"></div>
+		    <div id="error_login"></div>
         <input type="text" value="Your name" class="field1" name="user_name" id="user_name" onfocus="if (this.value=='Your name') this.value='';" onblur="this.value = this.value==''?'Your name':this.value;"/>
         <br>
         <input type="password" value="Your password" class="field2" name="password" id="password" onfocus="if (this.value=='Your password') this.value='';" onblur="this.value = this.value==''?'Your password':this.value;"/><br>
@@ -69,7 +69,7 @@ session_start();
       </form>
 
       <form id="log-up" method="post" style="display: none;">
-        <div id="error"></div>
+        <div id="error_logup"></div>
         <input type="text" value="Your name" class="field1-2" name="user_name" onfocus="if (this.value=='Your name') this.value='';" onblur="this.value = this.value==''?'Your name':this.value;"/>
         <br>
         <input type="password" value="Your password" class="field2-2" name="password" onfocus="if (this.value=='Your password') this.value='';" onblur="this.value = this.value==''?'Your password':this.value;"/><br>
