@@ -58,7 +58,7 @@ session_start();
     <div class="popup-inner">
       <div id="tab-1" onclick="tabActive('sign-in')" class="active"><p>SIGN IN</p></div>
       <div id="tab-2" onclick="tabActive('sign-up')" class="inactive"><p>SIGN UP</p></div>
-      <div id="error"></div>
+      
       <form id="log-in" class="form-login" method="post">
 		    <div id="error"></div>
         <input type="text" value="Your name" class="field1" name="user_name" id="user_name" onfocus="if (this.value=='Your name') this.value='';" onblur="this.value = this.value==''?'Your name':this.value;"/>

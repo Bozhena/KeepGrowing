@@ -49,18 +49,23 @@ $('document').ready(function()
             {
                 if(data==1){
                   $("#error").fadeIn(1000, function(){
-                      $("#error").html('<br> Sorry user name is already in use');
+                      $("#error").html('Sorry user name is already in use');
                   });
-
+                  $("#error").fadeOut(5000, function(){
+                    $("#error").html('');
+                  });
                 }
                 else if(data=="registered")
                 {
                     setTimeout('$(".popup").fadeOut(500, function(){$("#overlay").css("display", "none")});');}
                 else{
                 $("#error").fadeIn(1000, function(){
-                    $("#error").html('<br>'+data);
+                    $("#error").html(data);
                   });
-                }
+                $("#error").fadeOut(5000, function(){
+                  $("#error").html('');
+                });
+              }
             }
         });
         return false;
