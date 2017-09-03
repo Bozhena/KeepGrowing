@@ -62,16 +62,16 @@ body {
   margin-top: 268px;
   border-radius: 17px;
   text-align: left;
-  padding-bottom: 133px;
+  padding-bottom: 113px;
   margin-bottom: 196px;
-  font-size: 18px;
+  font-size: 19px;
   color: #FDFDFC;
   line-height: normal;
 }
 
 
 #image_container {
-  content: url("..//images/about.jpg");
+  content: url("..//images/about.jpeg");
   width: 100%;
   height: 221px;
   border-top-left-radius: 17px;
@@ -82,6 +82,8 @@ body {
 #content #motto {
   position: relative;
   text-align: center;
+  margin-left: 62px;
+  margin-right: 62px;
 }
 
 img.paragraph {
@@ -89,24 +91,28 @@ img.paragraph {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 54px;
-  margin-bottom: 54px;
-  width: 7%;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  width: 75px;
+  height: 3px;
 }
 
 .questions {
-  margin-left: 62px;
-  margin-right: 62px;
+  width: 825px;
+  margin: auto;
 }
 
-img.img { 
-  margin-left: 138px;
+img.img {
   margin-right: 62px;
-  width: 3%;
+  width: 30px;
   height: auto;
   vertical-align:middle;
-  margin-top: 5px;
-  margin-bottom: 5px;  
+  margin-top: 20px;
+  margin-bottom: 20px;  
+}
+
+.img a{
+  font-weight: bolder;
 }
 
 p.chapter {
