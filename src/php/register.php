@@ -10,7 +10,7 @@ if($_POST)
 
 	//password_hash see : http://www.php.net/manual/en/function.password-hash.php
 //	$password 	= password_hash( $user_password, PASSWORD_BCRYPT, array('cost' => 11));
-
+    if ($user_name!="Your Name"&&$user_password!="Your password"){
     try
     {
         $stmt = $db_con->prepare("SELECT * FROM users WHERE username=:user_name");
@@ -41,6 +41,7 @@ if($_POST)
     catch(PDOException $e){
         echo $e->getMessage();
     }
+  }
 }
 
 ?>

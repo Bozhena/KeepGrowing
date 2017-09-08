@@ -751,3 +751,25 @@ input.s3-btn{
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
+
+#error_login, #error_logup {
+  display: none;
+  color: #61716D;
+  font-size: 16px;
+  font-family: "Noto Serif";
+  padding: 25px;
+  margin-bottom: -75px;
+  font-weight: bold;
+}
+
+#user_name-error, #password-error, #user_email-error {
+  color: #61716D;
+  font-size: 12px;
+  font-family: "Noto Serif";
+  font-weight: bold;
+  float:left;
+  margin-left: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

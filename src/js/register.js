@@ -43,24 +43,29 @@ $('document').ready(function()
             data : data,
             beforeSend: function()
             {
-                $("#error").fadeOut();
+                $("#error_logup").fadeOut();
             },
             success :  function(data)
             {
                 if(data==1){
-                  $("#error").fadeIn(1000, function(){
-                      $("#error").html('<br> Sorry user name is already in use');
+                  $("#error_logup").fadeIn(1000, function(){
+                      $("#error_logup").html('Sorry user name is already in use');
                   });
-
+                  $("#error_logup").fadeOut(5000, function(){
+                    $("#error_logup").html('');
+                  });
                 }
                 else if(data=="registered")
                 {
                     setTimeout('$(".popup").fadeOut(500, function(){$("#overlay").css("display", "none")});');}
                 else{
-                $("#error").fadeIn(1000, function(){
-                    $("#error").html('<br>'+data);
+                $("#error_logup_1").fadeIn(1000, function(){
+                    $("#error_logup").html(data);
                   });
-                }
+                $("#error_logup").fadeOut(5000, function(){
+                  $("#error_logup").html('');
+                });
+              }
             }
         });
         return false;
