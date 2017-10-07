@@ -6,38 +6,39 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Noto+Serif" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <title>KeepGrowing</title>
-  <link rel="stylesheet" type="text/css" href="../css/keepGrowing.css">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="stylesheet" type="text/css" href="../css/search-results.css">
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
-  <script src="../js/navigation.js"></script>
+  <script src="../js/categories.js"></script>
+  <script src="../js/main.js"></script>
   <script src="../js/classie.js"></script>
 </head>
 
-<body onload="searchResult(); init();">
+<body onload="searchResult();">
 
-  <header class="navigation_menu">
-    <div id="logo">
-    </div>
-    <div id="nav_bar">
-      <ul>
-        <li class="nav_bar">
-			<input type="search" class="ui-btn" id="search_result" placeholder="What are you looking for?" oninput="changeIcon(this.id);" onkeypress="search(event, this.id);" onblur="disableBlur(this.id);"></input>
-        </li>
-        <li class="nav_bar"><a href="#" class="ui-btn" id="about">About</a></li>
-        <li class="nav_bar"><a href="#" class="ui-btn" id="signIn">Sign In</a></li>
-      </ul>
-    </div>
-  </header>
+	<header class="nav-menu">
 
-    <header class="masthead clear">
-      <div class="centered">
-        <div class="site-branding">
-          <h1 class="site-title"></h1>
-          <h2 class="site-title_2">New day is a new challenge</h2>
-          <h4 class="site-title_2_2">Today you can make...</h4>
-        </div>
-      </div>
-    </header>
+    <a href="../pages/main-page.html">
+      <img id="logo" src="../images/logo.webp">
+    </a>
+		<div id="main-menu">
+			<ul>
+				<li class="menu-item">
+					<input type="search" class="ui-btn" id="search_result" placeholder="What are you looking for?"
+						onkeypress="search(event, this);">
+				</li>
+				<li class="menu-item"><a href="#" id="about">About</a></li>
+				<li class="menu-item"><a href="#" id="sign-in">Sign In</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<div style="clear: both;"></div>
+	<div style="height: 76px;"></div>
+	<h2>New day is a new challenge</h2>
+	<h4>Today you can make...</h4>
+	<div style="height: 100px;"></div>
 
     <main class="main-area">
       <div class="centured">
@@ -249,8 +250,8 @@
       </div>
     </main>
 
-  <footer>
-    <p id="rights">
+  <footer style="position: relative;">
+    <p id="rights" style="position: absolute; width: 100%; min-height: 68px; bottom: -310px;">
       &#9400; 2017 Keep Growing. All rights reserved
     </p>
   </footer>

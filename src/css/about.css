@@ -1,0 +1,77 @@
+.main-area {
+  margin-top: -185px;
+}
+
+.centured {
+  margin: 4em;
+  margin-top: 2em;
+}
+
+#align_center {
+  margin: 4em;
+}
+
+#tile {
+  background-color:#919845;
+  position: relative;
+  margin-top: 268px;
+  border-radius: 17px;
+  text-align: left;
+  padding-bottom: 80px;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: -0.72px;
+  line-height: 25px;
+}
+
+#image_container {
+  content: url("..//images/about.jpeg");
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 17px;
+  border-top-right-radius:  17px;
+  margin-bottom: 69px;
+}
+
+#content #motto {
+  position: relative;
+  text-align: center;
+  margin-left: 62px;
+  margin-right: 62px;
+}
+
+.paragraph {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  font-size: 36px;
+  letter-spacing: 5px;
+  padding-top: 17px;
+  padding-bottom: 35px;
+}
+
+.questions {
+  width: 825px;
+  margin: auto;
+}
+
+img.img {
+  margin-right: 62px;
+  width: 30px;
+  height: auto;
+  vertical-align:middle;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+p.chapter {
+  margin-left: 52px;
+  margin-right: 52px;
+}
+
+ #tile a {
+  border-bottom: 1px solid white;
+}

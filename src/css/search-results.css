@@ -1,0 +1,33 @@
+#search_result {
+  width: 462px;
+  background: transparent;
+  outline: none;
+  text-align: left;
+  color: #4e5965;
+  font-weight: bold;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  text-indent:10px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #D15475;
+  border-radius: 17px;
+  height: 48px;
+  margin-right: -2px;
+  cursor: pointer;
+  background-origin: padding-box;
+  background-size: 34px;
+  background-position: top 10px left 8px;
+  background-image: url('../images/Search Tool.webp');
+  background-repeat: no-repeat;
+}
+
+#search_result::-webkit-input-placeholder { /* Chrome */
+  opacity: 2;
+}
+
+::-webkit-search-cancel-button {
+  padding-right: 12px;
+}
