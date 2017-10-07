@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Noto+Serif" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <title>KeepGrowing</title>
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="stylesheet" type="text/css" href="../css/search-results.css">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+  <script src="../js/categories.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/classie.js"></script>
+</head>
+
+<body onload="searchResult();">
+
+	<header class="nav-menu">
+
+    <a href="../pages/main-page.html">
+      <img id="logo" src="../images/logo.webp">
+    </a>
+		<div id="main-menu">
+			<ul>
+				<li class="menu-item">
+					<input type="search" class="ui-btn" id="search_result" placeholder="What are you looking for?"
+						onkeypress="search(event, this);">
+				</li>
+				<li class="menu-item"><a href="#" id="about">About</a></li>
+				<li class="menu-item"><a href="#" id="sign-in">Sign In</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<div style="clear: both;"></div>
+	<div style="height: 76px;"></div>
+	<h2>New day is a new challenge</h2>
+	<h4>Today you can make...</h4>
+	<div style="height: 100px;"></div>
+
+    <main class="main-area">
+      <div class="centured">
+        <section class="cards">
+          <article class="card">
+            <figure id="first_card" style="background-color:#919845; display:none;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_1"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="second_card" style="background-color:#52535C; display:none;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_2"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="third_card" style="background-color:#D0915A; display:none;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_3"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="forth_card" style="background-color:#3E5E30; display:none; " onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_4"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="fifth_card" style="background-color:#BBA231; display:none;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_5"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="sixth_card" style="background-color:#57B5B4; display:none; " onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_6"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="seventh_card" style="background-color:#58B05D; display:none;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_7"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="eights_card" style="background-color:#D25475; display:none;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_8"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="nine_card" style="background-color:#919845; display:none;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_9"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="ten_card" style="background-color:#919845; display:none;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_10"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="eleven_card" style="background-color:#52535C; display:none;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_11"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="twelve_card" style="background-color:#52535C; display:none;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_12"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="thirdteen_card" style="background-color:#D0915A; display:none;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_13"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="forteen_card" style="background-color:#3E5E30; display:none; " onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_14"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="fifteen_card" style="background-color:#BBA231; display:none;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_15"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="sixteen_card" style="background-color:#57B5B4; display:none; " onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_16"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="seventeen_card" style="background-color:#58B05D; display:none;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_17"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="eighteen_card" style="background-color:#D25475; display:none;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_18"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="nineteen_card" style="background-color:#919845; display:none;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_19"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="twenty_card" style="background-color:#919845; display:none;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_20"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="twenty_one_card" style="background-color:#52535C; display:none;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_21"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="twenty_two_card" style="background-color:#D0915A; display:none;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_22"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="twenty_three_card" style="background-color:#3E5E30; display:none; " onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_23"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="twenty_four_card" style="background-color:#BBA231; display:none;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_24"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="twenty_five_card" style="background-color:#57B5B4; display:none; " onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_25"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="twenty_six_card" style="background-color:#58B05D; display:none;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_26"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="twenty_seven_card" style="background-color:#D25475; display:none;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_27"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="twenty_eight_card" style="background-color:#919845; display:none;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_28"></p>
+            </figure>
+          </article>
+
+          <article class="card">
+            <figure id="twenty_nine_card" style="background-color:#919845; display:none;" onclick="getCardName(this.id); openCard();">
+              <img src="..//images/Card.webp" />
+              <p id="card_29"></p>
+            </figure>
+          </article>
+
+        </section>
+      </div>
+    </main>
+
+  <footer style="position: relative;">
+    <p id="rights" style="position: absolute; width: 100%; min-height: 68px; bottom: -310px;">
+      &#9400; 2017 Keep Growing. All rights reserved
+    </p>
+  </footer>
+
+</body>
+</html>

@@ -7,6 +7,7 @@
   <title>KeepGrowing</title>
   <link rel="stylesheet" type="text/css" href="../css/main.css">
   <link rel="stylesheet" type="text/css" href="../css/sign-in.css">
+  <link rel="stylesheet" type="text/css" href="../css/about.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
   <script src="../js/categories.js"></script>
   <script src="../js/main.js"></script>
@@ -16,7 +17,9 @@
 
 <body onload="onPageLoad();">
   <header class="nav-menu">
-    <img id="logo" src="../images/logo.webp">
+    <a href="../pages/main-page.html">
+      <img id="logo" src="../images/logo.webp">
+    </a>
     <div id="main-menu">
       <ul>
         <li class="menu-item">
@@ -25,7 +28,7 @@
                  onfocus="expandSearchField(this);"
                  onblur="collapseSearchField(this);">
         </li>
-        <li class="menu-item"><a href="../pages/about.html" id="about">About</a></li>
+        <li class="menu-item"><a href="#" id="about">About</a></li>
         <li class="menu-item"><a href="#" id="sign-in" onclick="popupOpen();">Sign In</a></li>
       </ul>
     </div>
@@ -60,72 +63,38 @@
     </div>
   </div>
 
-  <div style="clear: both;"></div>
-  <div style="height: 76px;"></div>
-  <h2>New day is a new challenge</h2>
-  <h4>Today you can make...</h4>
-  <div style="height: 100px;"></div>
 
   <main class="main-area">
     <div class="centured">
-      <section class="cards">
-        <article class="card">
-          <figure id="first_card" style="background-color:#919845;" onclick="getCardName(this.id); openCard();">
-            <img src="..//images/Card.webp" />
-            <p id="card_1"></p>
-          </figure>
-        </article>
-
-        <article class="card">
-          <figure id="second_card" style="background-color:#52535C;" onclick="getCardName(this.id); openCard();">
-            <img src="..//images/Card.webp" />
-            <p id="card_2"></p>
-          </figure>
-        </article>
-
-        <article class="card">
-          <figure id="third_card" style="background-color:#D0915A;" onclick="getCardName(this.id); openCard();">
-            <img src="..//images/Card.webp" />
-            <p id="card_3"></p>
-          </figure>
-        </article>
-
-        <article class="card">
-          <figure id="forth_card" style="background-color:#3E5E30;" onclick="getCardName(this.id); openCard();">
-            <img src="..//images/Card.webp" />
-            <p id="card_4"></p>
-          </figure>
-        </article>
-
-        <article class="card">
-          <figure id="fifth_card" style="background-color:#BBA231;" onclick="getCardName(this.id); openCard();">
-            <img src="..//images/Card.webp" />
-            <p id="card_5"></p>
-          </figure>
-        </article>
-
-        <article class="card">
-          <figure id="sixth_card" style="background-color:#57B5B4;" onclick="getCardName(this.id); openCard();">
-            <img src="..//images/Card.webp" />
-            <p id="card_6"></p>
-          </figure>
-        </article>
-
-        <article class="card">
-          <figure id="seventh_card" style="background-color:#58B05D;" onclick="getCardName(this.id); openCard();">
-            <img src="..//images/Card.webp" />
-            <p id="card_7"></p>
-          </figure>
-        </article>
-
-        <article class="card">
-          <figure id="eights_card" style="background-color:#D25475;" onclick="getCardName(this.id); openCard();">
-            <img src="..//images/Card.webp" />
-            <p id="card_8"></p>
-          </figure>
-        </article>
-
-      </section>
+        <div id="tile">
+            <div id="image_container"></div>
+            <div id="content">
+                <p id="motto">Be spontaneous, playful, and aware of what your child finds interesting and funny with KeepGrowing</p>
+                <p class="paragraph">.......</p>
+                <p class="chapter">We all took care of a younger sister, niephew or an own kid. Some of us got into this role naturally easy and some struggled with no handy idea in mind (don't worry we also did). At that point KeepGrowing will become an easy and handy solution. Try it out an see how interesting and exciting keep growing can be.</p>
+                <p class="chapter">Your tot may be a junior mathematician, meteorologist or painter. Let's find it out together what's their choice. Enjoy creating the world of verbal, logical, visual, and intrapersonal intelligence side by side with your child.</p>
+                <p class="paragraph">........</p>
+                <p class="chapter">KeepGrowing is a set of creative and entertaining developement tools for activities with children under their 13. Each activity is placed as a sepatate card with its naming, target age, and a feature under development. All handy items (pictures, photos and instructions) may be found inside.</p>
+                <p class="paragraph" style="padding-bottom: 17px;">.......</p>
+                <div class="questions">
+                  <div>
+                    <img class="img" src="..//images/about_comments.webp">Did you have a good time?
+                      <a>Leave comments and photos under cards to share them with us.</a>
+                    </img>
+                  </div>
+                  <div>
+                    <img class="img" src="..//images/about_register.webp">Got an idea your kid is fancy about?
+                      <a>Register and create own card.</a>
+                    </img>
+                  </div>
+                  <div>
+                    <img class="img" src="..//images/about_questions.webp">Got a question? Email us on
+                      <a>team@keepgrowing.io</a>
+                      and we'll get in touch with you.</img>
+                  </div>
+                </div>
+            </div>
+        </div>
     </div>
   </main>
 

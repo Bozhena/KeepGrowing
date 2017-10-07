@@ -1,6 +1,22 @@
 function onPageLoad() {
-  // init();
+  init();
   setTitles();
+}
+
+function init() {
+    window.addEventListener('scroll', function(e){
+        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+            shrinkOn = 50,
+            header = document.querySelector(".nav-menu");
+            console.log(distanceY)
+        if (distanceY > shrinkOn) {
+            classie.add(header,"smaller");
+        } else {
+            if (classie.has(header,"smaller")) {
+                classie.remove(header,"smaller");
+            }
+        }
+    });
 }
 
 function search(e, elem) {
@@ -8,7 +24,8 @@ function search(e, elem) {
     e.preventDefault(); // Ensure it is only this code that run
     localStorage.search_request = elem.value;
     searching(localStorage.search_request);
-    window.location.href = "searchResults.html";
+	elem.value = "";
+    window.location.href = "search-results.html";
   }
 }
 
@@ -44,19 +61,24 @@ function searching(search_request) {
 }
 
 function searchResult() {
+ init();
   document.getElementById("search_result").value = localStorage.search_request;
   var i = 1;
-  JSON.parse(localStorage["result"]).forEach(function (item) {
-    document.getElementById("card_" + i).innerHTML = item;
-    document.getElementById("card_" + i).parentNode.style.display = "";
+  if (JSON.parse(localStorage["result"]).length>0){
+  JSON.parse(localStorage["result"]).forEach(function (item){
+    document.getElementById("card_"+i).innerHTML = item;
+    document.getElementById("card_"+i).parentNode.style.display="";
     i++;
-  });
+  });}
+  else {
+    document.getElementsByTagName("h2")[0].innerHTML = "Sorry... Nothing seems to match";
+    document.getElementsByTagName("h4")[0].innerHTML = "";
+  }
 }
 
 function getRandomCard(category){
   return Math.floor(Math.random()*category.length);
 }
-
 
 function setTitles(){
   document.getElementById("card_1").innerHTML=category_1[getRandomCard(category_1)];
@@ -68,4 +90,16 @@ function setTitles(){
   document.getElementById("card_7").innerHTML=category_7[getRandomCard(category_7)];
   document.getElementById("card_8").innerHTML=category_8[getRandomCard(category_8)];
   // document.getElementById("card_9").innerHTML=category_9[getRandomCard(category_9)];
+}
+
+function openCard(){
+    window.location.href="card.html";
+}
+
+function openAbout(){
+    window.location.href="about.html";
+}
+
+function getCardName(id){
+  localStorage.title = document.getElementById(id).getElementsByTagName('p')[0].innerHTML;
 }
