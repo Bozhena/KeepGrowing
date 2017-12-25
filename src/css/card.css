@@ -1,6 +1,6 @@
 #title {
   text-align: center;
-  color:white;
+  color: #FFFF;
 }
 
 .title {
@@ -36,7 +36,7 @@
   height: 240px;
   max-width: 100%;
   max-height: 100%;
-  background-color: red;
+  background-color: white;
   float: left;
   margin-left: 4.5%;
 }
