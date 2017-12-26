@@ -13,3 +13,140 @@
   <script src="../js/navigation.js"></script>
   <script src="../js/classie.js"></script>
 </head>
+
+<body onload="onPageLoad();">
+
+  <header class="navigation_menu">
+    <div id="logo">
+    </div>
+    <div id="nav_bar">
+      <ul>
+        <li class="nav_bar">
+            <input type="search" class="ui-btn" id="search" placeholder="What are you looking for?" oninput="changeIcon(this.id);" onkeypress="search(event, this.id);" onfocus="useDefault(this.id);" onblur="useDefaultIcon(this.id);"></input>
+        </li>
+        <li class="nav_bar"><a href="#" class="ui-btn" id="about">About</a></li>
+        <li class="nav_bar"><a href="#" class="ui-btn" id="signIn">Sign In</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay" style="display:none;"></div>
+
+  <!-- Popup -->
+  <div class="popup" id="popup" style="display:none;">
+    <div class="popup-inner">
+      <div id="rectangle1"><p>SIGN IN</p></div>
+      <div id="rectangle2"><p>SIGN UP</p></div>
+      <input type="button" name="Close" class="s3-btn-close" onclick="popupClose();" value="&times;">
+      <form>
+        <input type="text" class="field"><br>
+        <input type="text" class="field"><br>
+        <p class="pass">Fogot your password<a href="">Click here</a></p>
+        <input type="submit" class="submit">
+      </form>
+    </div>
+  </div>
+
+  <!-- Popup Button -->
+
+  <header class="masthead clear">
+    <div class="centered">
+      <div class="site-branding">
+        <h1 class="site-title"></h1>
+        <h2 class="title">Tree with leaves</h2>
+        <div class="category">Drawing</div>
+        <div class="age">7-9</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-area">
+    <div class="centured"
+      <section class="cards">
+        <div class="tabs">
+          <div id="tab_1" onclick="tabsActive('comments')" class="inactive">
+            <div class="top">
+              <div id="tab_img_1">&nbsp;</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tabs">
+          <div id="tab_2" onclick="tabsActive('items')" class="inactive">
+            <div class="top">
+              <div id="tab_img_2">&nbsp;</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tabs">
+          <div id="tab_3" onclick="tabsActive('result')" class="inactive">
+            <div class="top">
+              <div id="tab_img_3">&nbsp;</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tabs">
+          <div id="tab_4" onclick="tabsActive('description')" class="active">
+            <div class="top">
+              <div id="tab_img_4">&nbsp;</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body">
+
+          <div id="description-content">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The card can be used in different ways. Some of them we wll deacribed below, another ones your imagintions will tell you :) 	</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can print out the tree and the leaves. Cut the leaves out or color the leaves beforehand and then cut them out. You can print out more then one page of leaves. Then ask your child you stick the leaves to the tree branches. Show the child how they grow in nature.</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tree can help you to teach your child seasons of the year via coloring the leaves in 3 different colours: green (summer), yellow (autumn), light green (spring) and leave tree or part of it without leaves (winter). Ask your child to cover trees with leaves of specific color accodingly to the season.</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can drow the tree on the white board or your wall using tree on the Component_1 as an example. Then print our the leaves and use them as you wish.</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name each branch as any activity which your child does or you wish him/her to do (reading, writing, going to bed in time, etc). Let’s your child add 1 leaf to the branch each time he/she do the activity. Besides, you can diferentiate the tree via addiing flowers, fruits; ame Item_1 with the name of your child, etc.</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We wish you having fun! :)
+
+          </div>
+
+          <div id="items-content" style="display:none">
+
+              <img class="items-img" src="../images/orange_card.jpg"/>
+              <figcaption> Step 1 </figcaption>
+
+              <img class="items-img" src="../images/orange_card.jpg"/>
+              <figcaption> Step 2 </figcaption>
+
+              <img class="items-img" src="../images/minimalist.jpg"/>
+              <figcaption> Step 3 </figcaption>
+
+          </div>
+
+          <div id="result-content" style="display:none;">333333333333333333333333333333333</div>
+
+          <div id="comments-content" style="display:none;">
+              <textarea id="subject" name="subject" placeholder="Type your comment here" style="height:90px"></textarea>
+              <button type="add" onclick="myFunction()">Add</button>
+              <p id="demo"></p>
+            </div>
+          </div>
+
+      </section>
+</div>
+          </div>
+  </main>
+
+<footer>
+  <p id="rights">
+    &#9400; 2017 Keep Growing. All rights reserved
+  </p>
+</footer>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("subject").value;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>
