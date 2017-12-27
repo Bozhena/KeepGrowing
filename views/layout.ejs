@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>KeepGrowing</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/sign-in.css">
+    <%- defineContent('about_css') %>
+
+    <script src="../js/categories.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/classie.js"></script>
+    <script src="../js/sign-in.js"></script>
+</head>
+
+<body onload="onPageLoad();">
+<header class="nav-menu">
+    <img id="logo" src="../images/logo.webp">
+    <div id="main-menu">
+        <ul>
+            <li class="menu-item">
+                <input type="search" id="search" class="collapsed" placeholder="What are you looking for?"
+                       onkeypress="search(event, this);"
+                       onfocus="expandSearchField(this);"
+                       onblur="collapseSearchField(this);">
+            </li>
+            <li class="menu-item"><a href="/about" id="about">About</a></li>
+            <li class="menu-item"><a href="#" id="sign-in" onclick="popupOpen();">Sign In</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="overlay" id="overlay" style="display:none;"></div>
+
+<div class="popup" id="popup" style="display:none;">
+    <div class="popup-inner">
+        <div id="tab-1" onclick="tabActive('sign-in')" class="active"><p>SIGN IN</p></div>
+        <div id="tab-2" onclick="tabActive('sign-up')" class="inactive"><p>SIGN UP</p></div>
+        <div id="error"></div>
+
+        <form id="log-in" class="form-login" method="post">
+            <div id="error"></div>
+            <input type="text" placeholder="Your name" class="log-in-name" name="user_name" id="user_name"/>
+            <br>
+            <input type="password" placeholder="Your password" class="log-in-password" name="password" id="password"/><br>
+            <p class="pass">Forgot your password<a class="pass1" href="">Click here</a></p>
+            <input type="submit" class="submit" id="btn-submit" value="OK">
+        </form>
+
+        <form id="log-up" method="post" style="display: none;">
+            <div id="error"></div>
+            <input type="text" placeholder="Your name" class="log-up-name" name="user_name"/>
+            <br>
+            <input type="password" placeholder="Your password" class="log-up-password" name="password"/><br>
+            <input type="text" placeholder="Your e-mail" class="log-up-email"  name="user_email"/><br>
+            <input type="submit" class="submit-2" id="btn-submit" value="OK">
+        </form>
+        <img class="close" src="../images/Cancel_for_pop.webp" onclick="popupClose();" value="&times;"/>
+    </div>
+</div>
+
+<%- defineContent('main') %>
+
+<footer>
+    <p id="rights">
+        &#9400; 2017 Keep Growing. All rights reserved
+    </p>
+</footer>
+
+</body>
+</html>

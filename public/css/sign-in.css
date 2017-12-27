@@ -1,0 +1,171 @@
+.overlay {
+  background: rgba(0,0,0,0.8);
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 10;
+  height: 100%;
+}
+
+.popup {
+  background: #BCC187;
+  border-radius: 17px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 11;
+  width: 500px;
+  height: 380px;
+  margin: auto;
+  margin-top: 170px;
+}
+
+.popup-inner {
+  position: relative;
+  padding: 1em;
+}
+
+img.close {
+  position: absolute;
+  top: -50px;
+  right: -20px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  -ms-transform: scale(0.7,0.7); /* IE 9 */
+  -webkit-transform: scale(0.7,0.7); /* Safari */
+  transform: scale(0.7,0.7);
+}
+
+input.s3-btn {
+  background: #f1f1f1;
+  border: none;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.s3-center {
+  text-align: center;
+}
+
+#tab-1, #tab-2 {
+	width: 250px;
+	height: 40px;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+  margin-top: -40px;
+  margin-left: -16px;
+  position: absolute;
+}
+
+#tab-2 {
+	height: 54px;
+  margin-left: 234px;
+}
+
+#log-in input::-webkit-input-placeholder, #log-up input::-webkit-input-placeholder {
+   color: #61716D;
+   text-align: center;
+   text-indent: auto;
+}
+
+#log-in input, #log-up input {
+  text-align: center;
+}
+
+.popup-inner .active {
+  background-color: #BCC187;
+}
+
+.popup-inner .inactive {
+  background-color: #636843;
+}
+
+#tab-1, #tab-2  p {
+  text-align: center;
+  padding-top:15px;
+  font-size: 24px;
+  color: #4A4A4A;
+  font-family: "Noto Serif";
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.log-in-name, .log-in-password, .log-up-name, .log-up-password, .log-up-email {
+  width: 383px;
+  height: 45px;
+  margin-top: 90px;
+  margin-left: 40px;
+  border-radius: 17px;
+  background-color: #D7E3CF;
+  color: #61716D;
+  border: none;
+  box-shadow: 0 0 5px #969090;
+  font-size: 16px;
+  font-family: "Noto Serif";
+}
+
+.log-in-name:focus, .log-in-password:focus, .log-up-name:focus, .log-up-password:focus, .log-up-email:focus {
+  outline: none;
+  border: 2px solid #D15475;
+
+}
+
+.log-in-password, .log-up-password, .log-up-email {
+  margin-top: 10px;
+}
+
+.pass, .pass1 {
+  font-size: 14px;
+  margin-left: 40px;
+  margin-top: 10px;
+  color: #4E5965;
+  font-family: "Noto Serif";
+  font-style: normal;
+}
+
+.pass1 {
+  margin-left: 3px;
+  color: #D15475;
+}
+
+.submit, .submit-2 {
+  float: right;
+  margin-right: 45px;
+  margin-top: 25px;
+  color: #4E5965;
+  background-color: #BCC187;
+  font-family: "Noto Serif";
+  border-radius: 17px;
+  border-width: 4px;
+  border-color: #63BA34;
+  font-weight: bold;
+  font-size: 16px;
+  padding-left: 37px;
+  padding-right: 37px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-style: solid;
+}
+
+.submit:hover, .submit-2:hover {
+  border-color: #D15475;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}

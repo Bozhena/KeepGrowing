@@ -1,0 +1,288 @@
+body {
+  font-size: 16px;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  /* TODO: Background image looks bad on small window sizes
+    Try to fix it with this:
+     background-size: 100%;
+     background-position: 50% 50%;
+  */
+  font-family: "Noto Serif", serif;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+body > header {
+  margin-top: 69px;
+  margin-left: 112px;
+  -webkit-transition: opacity 0.3s, visibility 0.3s;
+  -moz-transition: opacity 0.3s, visibility 0.3s;
+  -ms-transition: opacity 0.3s, visibility 0.3s;
+  -o-transition: opacity 0.3s, visibility 0.3s;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+#main-menu {
+  float: right;
+}
+
+.nav-menu {
+  -webkit-transition: opacity 0.3s, visibility 0.3s;
+  -moz-transition: opacity 0.3s, visibility 0.3s;
+  -ms-transition: opacity 0.3s, visibility 0.3s;
+  -o-transition: opacity 0.3s, visibility 0.3s;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.nav-menu.smaller {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.menu-item {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+#main-menu a {
+  text-decoration: none;
+  color:#4E5965;
+  font-family: "Noto Serif";
+  font-weight: bold;
+  font-size: 17px;
+}
+
+#main-menu a:visited {
+  color:#4E5965;
+}
+
+a#about:hover {
+  color: #D15475;
+}
+
+#sign-in {
+  border: 3px solid #63BA34;
+  border-radius: 17px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-right: 82px;
+}
+
+#sign-in:hover {
+  border-color: #D15475;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+#search {
+  width: 49px;
+  background: transparent;
+  transition: width 1s, border-color 1s, margin 0.6s ease-in-out;
+  -webkit-transition: width 1s, border-color 1s, margin 0.6s ease-in-out;
+  outline: none;
+  text-align: left;
+  color: #4e5965;
+  font-weight: bold;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-origin: padding-box;
+  background-size: 34px;
+  background-position: top 10px left 8px;
+  background-image: url('../../../webstorm/kg/public/images/Search Tool.webp');
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 3px;
+  border-color: transparent;
+  border-radius: 17px;
+  height: 48px;
+  margin-right: -12px;
+  cursor: pointer;
+}
+
+#search.collapsed {
+  background-repeat: no-repeat;
+  border-color: transparent;
+  padding-left: 50px;
+}
+
+#search.collapsed:hover{
+  background-image: url('../../../webstorm/kg/public/images/Search Tool-pink.webp');
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+#search.expanded {
+  width: 462px;
+  padding-left: 50px;
+  border-color: #D15475;
+  text-indent:10px;
+  margin-right: -2px;
+}
+
+body > h2 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  clear: both;
+  margin: 0 0 0;
+  font-size: 24px;
+  padding: 0 0;
+  text-align: center;
+  color: #3D4554;
+}
+
+body > h4 {
+  font-family: "Noto Serif";
+  font-weight: normal;
+  margin: 0 0 0;
+  padding: 0 0;
+  letter-spacing: -0.72px;
+  text-align: center;
+  color: #3D4554;
+  margin-top: 7px;
+  font-size: 18px;
+}
+
+::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  background-position: right;
+  height: 20px;
+  padding-right: 25px;
+  margin-top: 5px;
+  background: url('../../../webstorm/kg/public/images/Cancel Sign.webp');
+  background-repeat: no-repeat;
+  background-size: 12px;
+}
+
+#search:focus::-webkit-input-placeholder {
+  opacity: 2;
+}
+
+#search::-webkit-input-placeholder {
+  color: #EFF2EA;
+  text-align: left;
+  font-family: "Noto Serif";
+  font-weight: bold;
+  font-size: 20;
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+#logo {
+  height: 51px;
+}
+
+footer {
+  width: 100%;
+  height: 68px;
+}
+
+#rights {
+  text-align: center;
+  font-family: "Noto Serif";
+  color: #3D4554;
+  font-size: 17px;
+  letter-spacing: -0.72px;
+}
+
+.main-area {
+  margin-top: -15px;
+}
+
+.centured {
+  margin: 4em;
+  margin-top: 2em;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  visibility: hidden;
+}
+
+.card p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  margin-top: -12px;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-size: 18px;
+}
+
+figure:hover {
+  -webkit-box-shadow: 3px 4px 10px 0px rgba(52, 50, 50, 0.85);
+  -moz-box-shadow:    3px 4px 10px 0px rgba(52, 50, 50, 0.85);
+  box-shadow:         3px 4px 10px 0px rgba(52, 50, 50, 0.85);
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+  border-radius: 17px;
+  font-size: 25px;
+}
+
+.cards {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin-bottom: -5px;
+  margin-right: -10px;
+  margin-left: -10px;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 calc(25% - 0.5em);
+  flex: 0 1 calc(25% - 0.5em);
+  cursor: pointer;
+  /* for 3 cards in a row:
+    -ms-flex: 0 1 calc(33% - 0.5em);
+    flex: 0 1 calc(33% - 0.5em);
+    width: calc(33% - 1em);
+  */
+}
+
+.centured .cards {
+   margin-left: -1px;
+   margin-right: -100px;
+}
+
+figure {
+   -ms-transform: scale(0.9,0.9); /* IE 9 */
+   -webkit-transform: scale(0.9,0.9); /* Safari */
+   transform: scale(0.9,0.9);
+   font-size: 22px;
+   position: relative;
+   text-align: center;
+   width: 100%;
+   border-radius: 17px;
+}
+
+figure:hover p {
+   font-size: 20px;
+}
