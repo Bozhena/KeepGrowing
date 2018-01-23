@@ -464,8 +464,9 @@ Header styles minus menu
 
     .items-img {
       height: 200px;
+      width:auto;
       border-radius: 17px;
-      display: inline;
+      display: flex;
       order: 2;
       flex-grow: 0;
       flex-shrink: 1;
@@ -476,12 +477,14 @@ Header styles minus menu
       cursor: pointer; cursor: hand;
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-around;
+      width: inherit;
+      height: auto;
       align-items: center;
-      margin: 0 10px;
+      margin: 0 50px 0 50px;
     }
 
-    #items-content p {
+    /* #items-content p {
       position: absolute;
       transform: translate(-50%, -50%);
       text-align: center;
@@ -491,7 +494,7 @@ Header styles minus menu
       font-family: "Montserrat";
       font-weight: lighter;
       font-size: 16px;
-    }
+    } */
 
     .left.inner-wrapper, right.inner-wrapper {
       flex: 1;
@@ -623,13 +626,14 @@ button:hover {
 }
 
 figcaption {
-  float: right;
+  /*float: right;
   width: 30%;
-  text-align: center;
   font-size: smaller;
   text-indent: 0;
-  margin: 0.5em;
+  margin: 0 50px;
   padding: 0.5em;
-  height: 100%;
+  height: 100%;*/
+
+  text-align: center;
   color: #fff;
 }
