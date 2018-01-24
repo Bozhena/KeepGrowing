@@ -35,21 +35,21 @@ function tabsActive(tabName){
     document.getElementById ("tab_1").className = 'inactive';
   } else if (tabName === 'result') {
     document.getElementById ("description-content").style.display = "none";
-    document.getElementById ("result-content").style.display = "none";
-    document.getElementById ("comments-content").style.display = "none";
-    document.getElementById ("items-content").style.display = "block";
-    document.getElementById ("tab_1").className = 'inactive';
-    document.getElementById ("tab_2").className = 'inactive';
-    document.getElementById ("tab_3").className = 'active';
-    document.getElementById ("tab_4").className = 'inactive';
-  } else if (tabName === 'items') {
-    document.getElementById ("description-content").style.display = "none";
     document.getElementById ("result-content").style.display = "block";
     document.getElementById ("comments-content").style.display = "none";
     document.getElementById ("items-content").style.display = "none";
     document.getElementById ("tab_1").className = 'inactive';
     document.getElementById ("tab_2").className = 'active';
     document.getElementById ("tab_3").className = 'inactive';
+    document.getElementById ("tab_4").className = 'inactive';
+  } else if (tabName === 'items') {
+    document.getElementById ("description-content").style.display = "none";
+    document.getElementById ("result-content").style.display = "none";
+    document.getElementById ("comments-content").style.display = "none";
+    document.getElementById ("items-content").style.display = "flex";
+    document.getElementById ("tab_1").className = 'inactive';
+    document.getElementById ("tab_2").className = 'inactive';
+    document.getElementById ("tab_3").className = 'active';
     document.getElementById ("tab_4").className = 'inactive';
   } else {
     document.getElementById ("description-content").style.display = "none";
