@@ -471,6 +471,7 @@ Header styles minus menu
       flex-grow: 0;
       flex-shrink: 1;
       flex-basis: auto;
+      margin: 10px;
     }
 
     #items-content  {
@@ -482,6 +483,7 @@ Header styles minus menu
       margin: 0 10px;
       width: inherit;
       height: auto;
+      padding: 10px;
     }
 
     #items-content p {
@@ -510,20 +512,28 @@ Header styles minus menu
       width: inherit;
       height: inherit;
       margin: 60px;
-      padding-top: 120px;
       color: #FDFDFC;
       font-size: 12px;
       font-weight: lighter;
       letter-spacing: 1px;
       line-height: 25px;
       font-family: "Montserrat";
-      margin-top: -100px;
     }
 
     #comments-content {
-      width: 200px;
+      width: inherit;
       hyphens: 200px;
       background-color: yellow;
+    }
+
+    #comments-content div{
+      width:inherit;
+      box-sizing: border-box;
+      margin-bottom: 16px;
+
+      margin-top: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
 
     /*--------------------------------------------------------------
@@ -557,7 +567,7 @@ footer {
   background-color: #919845;
 }
 
-input[type=text], select, textarea {
+input[type=text], select {
     width: 900px;
     padding: 12px;
     border: 1px solid #ccc;
@@ -571,20 +581,23 @@ input[type=text], select, textarea {
 }
 
 button[type=add] {
-    background-color: #919845;
-    padding: 12px 20px;
-    border: 3px solid #63BA34;
-    border-radius: 17px;
-    cursor: pointer;
-    margin-left: 425px;
-    margin-top: -10px;
-    border-width: 3px;
-    font-size: 20px;
-    font-family: "Noto Serif";
-    font-weight: bold;
-    color:#4E5965;
-    width: 120px;
-    outline: none;
+  background-color: #919845;
+   padding: 12px 20px;
+  border: 3px solid #63BA34;
+  border-radius: 17px;
+  cursor: pointer;
+  /*margin-left: 425px;*/
+  /* margin-top: -10px; */
+  border-width: 3px;
+  font-size: 20px;
+  font-family: "Noto Serif";
+  font-weight: bold;
+  color:#4E5965;
+  width: 120px;
+  outline: none;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
 }
 
 button:hover {
@@ -601,13 +614,23 @@ button:hover {
 }
 
 #subject {
-  color: #FDFDFC;
-  font-size: 12px;
-  font-weight: lighter;
-  line-height: 25px;
-  font-family: "Montserrat";
-  outline: none;
-}
+    color: #FDFDFC;
+    font-size: 12px;
+    font-weight: lighter;
+    line-height: 25px;
+    font-family: "Montserrat";
+    outline: none;
+
+    width:inherit;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 17px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    resize: horizontal;
+    background-color: #919845;
+  }
 
 .card_desc {
   width: 85%;
