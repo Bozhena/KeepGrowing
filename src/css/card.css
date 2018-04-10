@@ -8,7 +8,6 @@ html {
 
 body {
   font-size: 16px;
-  background-image: url(..//images/background.jpg);
   background-repeat: no-repeat;
   background-attachment:fixed;
   background-size: 100% 100%;
@@ -319,17 +318,17 @@ Header styles minus menu
     }
 
     .category {
-      margin-left: 93px;
+      margin-left: 950px;
       font-size: 18px;
     }
 
     .age {
       font-size: 18px;
-      margin-left: 93px;
+      margin-left: 950px;
     }
 
     .card-body {
-      background-color: #919845;
+      background-color: #D3E2C7;
       border-radius: 17px;
       width: 100%;
       min-height: 400px;
@@ -346,52 +345,34 @@ Header styles minus menu
     }
 
     .tabs {
-      float: right;
+      float: left;
       margin-top: -30px;
+      margin: 0;
+      padding: 0;
+      line-height: 24px;
     }
 
     #tab_1, #tab_2, #tab_3, #tab_4 {
-      width: 57px;
+      width: 140px;
+      height: 15px;
       border-width: 50px 18px 0;
       border-style: solid;
-      border-color: #BCC187 transparent;
+      border-color: #D3E2C7;
       -ms-transform: scale(1.0,1.0); /* IE 9 */
       -webkit-transform: scale(1.0,1.0); /* Safari */
       transform: scale(0.8,0.8);
       z-index: 50;
       position: relative;
       top: 30px;
+      border-radius: 13px;
 
-    }
-
-    #tab_1:before, #tab_2:before, #tab_3:before, #tab_4:before {
-      content: "";
-      display: inline-block;
-      position: absolute;
-      height: 0;
-      width: 3px;
-      top: -85px;
-      left: -18px;
-      border-width: 0 45px 35px;
-      border-style: solid;
-      border-color: transparent transparent #BCC187;
-      z-index: -10;
     }
 
     #tab_1.active, #tab_2.active, #tab_3.active, #tab_4.active {
-      border-color: #919845 transparent;
-      width: 48px;
+      border-color: #D3E2C7;
+      width: 140px;
       border-width: 60px 28px 0;
       top: 27px;
-
-
-    }
-
-    #tab_1.active:before, #tab_2.active:before, #tab_3.active:before, #tab_4.active:before {
-      border-color: transparent transparent #919845;
-      border-width: 0 50px 33px;
-      left: -28px;
-      top: -93px;
     }
 
     .top {
@@ -400,67 +381,67 @@ Header styles minus menu
     }
 
     #tab_4 {
-      margin-right: -18px;
+      margin-left: -18px;
     }
 
     #tab_1 #tab_img_1 {
        content: url('..//images/Comments_icon_gray.webp');
-       margin-top: -60px;
+       margin-top: -40px;
        margin-left: -2px;
     }
 
     #tab_1.active #tab_img_1 {
       content: url('..//images/Comments_icon_white.webp');
-      margin-top: -70px;
+      margin-top: -50px;
       margin-left: -9px;
     }
 
     #tab_2 #tab_img_2 {
       content: url('..//images/Result_icon_gray.webp');
-      margin-top: -60px;
+      margin-top: -40px;
       margin-left: -2px;
     }
 
     #tab_2.active #tab_img_2 {
       content: url('..//images/Result_icon_white.webp');
-      margin-top: -70px;
+      margin-top: -50px;
       margin-left: -9px;
     }
 
     #tab_3 #tab_img_3 {
        content: url('..//images/Items_icon_gray.webp');
-       margin-top: -60px;
+       margin-top: -40px;
        margin-left: -2px;
     }
 
     #tab_3.active #tab_img_3 {
       content: url('..//images/Items_icon_white.webp');
-      margin-top: -70px;
+      margin-top: -50px;
       margin-left: -9px;
     }
 
     #tab_4 #tab_img_4 {
       content: url('..//images/Description_icon_gray.webp');
-      margin-top: -60px;
+      margin-top: -40px;
       margin-left: -2px;
     }
 
     #tab_4.active #tab_img_4 {
       content: url('..//images/Description_icon_white.webp');
-      margin-top: -70px;
+      margin-top: -50px;
       margin-left: -9px;
     }
 
     #tab_3 {
-      margin-right: -18px;
+      margin-left: -18px;
     }
 
     #tab_1 {
-      margin-right: -8px;
+      margin-left: -8px;
     }
 
     #tab_2 {
-      margin-right: -18px;
+      margin-left: -18px;
     }
 
     .items-img {
@@ -483,7 +464,7 @@ Header styles minus menu
       margin: 0 10px;
       width: inherit;
       height: auto;
-      padding: 10px;
+      padding: 100px;
     }
 
     #items-content p {
@@ -524,6 +505,7 @@ Header styles minus menu
       width: inherit;
       hyphens: 200px;
       background-color: yellow;
+      margin: 80px;
     }
 
     #comments-content div{
@@ -581,7 +563,7 @@ input[type=text], select {
 }
 
 button[type=add] {
-  background-color: #919845;
+  background-color: #D3E2C7;
    padding: 12px 20px;
   border: 3px solid #63BA34;
   border-radius: 17px;
@@ -597,7 +579,7 @@ button[type=add] {
   outline: none;
   position: absolute;
   bottom: 15px;
-  right: 15px;
+  right: 90px;
 }
 
 button:hover {
@@ -629,7 +611,7 @@ button:hover {
     margin-top: 10px;
     margin-bottom: 16px;
     resize: horizontal;
-    background-color: #919845;
+    background-color: #D3E2C7;
   }
 
 .card_desc {
