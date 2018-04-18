@@ -34,7 +34,7 @@ Header styles minus menu
 }
 
 .title {
-  font-family: "Montserrat";
+  font-family: "Lucida Grande";
   font-weight: bold;
   margin: 0 0 0;
   margin-top: 182px;
@@ -320,11 +320,13 @@ Header styles minus menu
     .category {
       margin-left: 950px;
       font-size: 18px;
+      font-family: "Lucida Grande";
     }
 
     .age {
       font-size: 18px;
       margin-left: 950px;
+      font-family: "Lucida Grande";
     }
 
     .card-body {
@@ -352,7 +354,7 @@ Header styles minus menu
       line-height: 24px;
     }
 
-    #tab_1, #tab_2, #tab_3, #tab_4 {
+    #tab_4, #tab_3, #tab_2, #tab_1 {
       width: 140px;
       height: 15px;
       border-width: 50px 18px 0;
@@ -361,18 +363,20 @@ Header styles minus menu
       -ms-transform: scale(1.0,1.0); /* IE 9 */
       -webkit-transform: scale(1.0,1.0); /* Safari */
       transform: scale(0.8,0.8);
-      z-index: 50;
+      z-index: 100;
       position: relative;
       top: 30px;
       border-radius: 13px;
+      cursor: pointer; cursor: hand;
 
     }
 
-    #tab_1.active, #tab_2.active, #tab_3.active, #tab_4.active {
+    #tab_4.active, #tab_3.active, #tab_2.active, #tab_1.active {
       border-color: #D3E2C7;
       width: 140px;
       border-width: 60px 28px 0;
       top: 27px;
+      cursor: pointer; cursor: hand;
     }
 
     .top {
@@ -380,54 +384,83 @@ Header styles minus menu
       margin-left: 17px;
     }
 
-    #tab_4 {
+    #name {
+      z-index: 55;
+      color: #ACACAC;
+      margin-top: -30px;
+      margin-left: 40px;
+      cursor: pointer; cursor: hand;
+      font-size: 18px;
+      font-family: Helvetica;
+
+    }
+    #name.active {
+      z-index: 55;
+      color: #564F4F;
+      margin-top: -30px;
+      margin-left: 40px;
+      cursor: pointer; cursor: hand;
+      font-size: 18px;
+      font-family: Helvetica;
+
+    }
+
+    #tab_1 {
       margin-left: -18px;
     }
 
-    #tab_1 #tab_img_1 {
-       content: url('..//images/Comments_icon_gray.webp');
+    #tab_4 #tab_img_4 {
+       content: url('..//images/desc_tab.webp');
+       color: #ACACAC;
        margin-top: -40px;
        margin-left: -2px;
     }
 
-    #tab_1.active #tab_img_1 {
-      content: url('..//images/Comments_icon_white.webp');
-      margin-top: -50px;
-      margin-left: -9px;
-    }
-
-    #tab_2 #tab_img_2 {
-      content: url('..//images/Result_icon_gray.webp');
-      margin-top: -40px;
-      margin-left: -2px;
-    }
-
-    #tab_2.active #tab_img_2 {
-      content: url('..//images/Result_icon_white.webp');
+    #tab_4.active #tab_img_4 {
+      content: url('..//images/desc_tab.webp');
+      color: #564F4F;
       margin-top: -50px;
       margin-left: -9px;
     }
 
     #tab_3 #tab_img_3 {
-       content: url('..//images/Items_icon_gray.webp');
-       margin-top: -40px;
-       margin-left: -2px;
-    }
-
-    #tab_3.active #tab_img_3 {
-      content: url('..//images/Items_icon_white.webp');
-      margin-top: -50px;
-      margin-left: -9px;
-    }
-
-    #tab_4 #tab_img_4 {
-      content: url('..//images/Description_icon_gray.webp');
+      content: url('..//images/items_tab.webp');
+      color: #ACACAC;
       margin-top: -40px;
       margin-left: -2px;
     }
 
-    #tab_4.active #tab_img_4 {
-      content: url('..//images/Description_icon_white.webp');
+    #tab_3.active #tab_img_3 {
+      content: url('..//images/items_tab.webp');
+      color: #564F4F;
+      margin-top: -50px;
+      margin-left: -9px;
+    }
+
+    #tab_2 #tab_img_2 {
+       content: url('..//images/result_tab.webp');
+       color: #ACACAC;
+       margin-top: -40px;
+       margin-left: -2px;
+    }
+
+    #tab_2.active #tab_img_2 {
+      content: url('..//images/result_tab.webp');
+      color: #564F4F;
+      margin-top: -50px;
+      margin-left: -9px;
+    }
+
+    #tab_1 #tab_img_1 {
+      content: url('..//images/comments_tab.webp');
+      color: #ACACAC;
+      margin-top: -40px;
+      margin-left: -2px;
+    }
+
+    #tab_1.active #tab_img_1 {
+      content: url('..//images/comments_tab.webp');
+      color: #564F4F;
       margin-top: -50px;
       margin-left: -9px;
     }
@@ -465,6 +498,7 @@ Header styles minus menu
       width: inherit;
       height: auto;
       padding: 100px;
+      font-family: "Helvetica";
     }
 
     #items-content p {
@@ -474,7 +508,7 @@ Header styles minus menu
       margin-left: 220px;
       margin-top: -60px;
       color: #fff;
-      font-family: "Montserrat";
+      font-family: "Helvetica";
       font-weight: lighter;
       font-size: 16px;
     }
@@ -493,12 +527,12 @@ Header styles minus menu
       width: inherit;
       height: inherit;
       margin: 60px;
-      color: #FDFDFC;
+      color: #564F4F;
       font-size: 12px;
       font-weight: lighter;
       letter-spacing: 1px;
       line-height: 25px;
-      font-family: "Montserrat";
+      font-family: "Helvetica";
     }
 
     #comments-content {
@@ -591,7 +625,6 @@ button:hover {
   font-size: 20px;
   color: #fff;
   position: relative;
-  margin-left: -250px;
   z-index: 155;
 }
 
@@ -632,5 +665,7 @@ button:hover {
 
 figcaption {
   text-align: center;
-  color: #fff;
+  color: #564F4F;
+  font-family: "Helvetica";
+
 }
